@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" fill="none" aria-hidden="true">
+  <path
+    fill="#DD0031"
+    d="M125 18 31.5 63.5v123L125 232l93.5-45.5v-123L125 18Z"
+  />
+  <path
+    fill="#C3002F"
+    d="M125 18v214L31.5 186.5v-123L125 18Z"
+  />
+  <path
+    fill="#fff"
+    d="M125 52 72 178h21l11-28h42l11 28h21L125 52Zm7 82-17-44 17 44Z"
+  />
+</svg>

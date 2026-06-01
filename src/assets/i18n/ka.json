@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "home": "მთავარი",
+    "about": "ჩემს შესახებ",
+    "experience": "გამოცდილება",
+    "skills": "უნარები",
+    "projects": "პროექტები",
+    "contact": "კონტაქტი"
+  },
+  "hero": {
+    "greeting": "გამარჯობა, მე ვარ",
+    "title": "უფროსი Frontend ინჟინერი",
+    "subtitle": "Angular დეველოპერი, რომელიც სპეციალიზირდება საწარმოო აპლიკაციებში, fintech პლატფორმებში, აზარტული თამაშების სისტემებში და მასშტაბირებად ვებ გადაწყვეტილებებში.",
+    "ctaProjects": "პროექტების ნახვა",
+    "ctaSkills": "უნარების ნახვა",
+    "ctaContact": "დაგვიკავშირდით"
+  },
+  "about": {
+    "label": "ჩემს შესახებ",
+    "title": "ჩემს შესახებ",
+    "subtitle": "შესანიშნავი ციფრული გამოცდილების შექმნა თანამედროვე frontend ტექნოლოგიებით.",
+    "journeyTitle": "კარიერული გზა",
+    "highlights": {
+      "developer": "პროგრამისტი, რომელსაც სურს სუფთა და მოვლადი კოდის შექმნა",
+      "angular": "ძლიერი Angular გამოცდილება რამდენიმე მთავარ ვერსიაზე",
+      "typescript": "ღრმა გამოცდილება TypeScript-თან და ტიპ-უსაფრთხო არქიტექტურებთან",
+      "enterprise": "დადასტურებული გამოცდილება საწარმოო მასშტაბის აპლიკაციების შექმნაში",
+      "fintech": "Fintech ინდუსტრიის გამოცდილება რთული ფინანსური პროცესებით",
+      "gambling": "აზარტული თამაშების ინდუსტრიის გამოცდილება რეალ-დროის სისტემებით",
+      "construction": "მშენებლობის ინდუსტრიის გამოცდილება ველის მართვის ხელსაწყოებით",
+      "challenges": "გატაცებული რთული ტექნიკური გამოწვევების გადაჭრით",
+      "innovation": "ყოველთვის დაინტერესებული ინოვაციური ტექნოლოგიებითა და საუკეთესო პრაქტიკებით",
+      "location": "ცხოვრობს თბილისში, საქართველოში",
+      "remote": "ღიაა დისტანციური შესაძლებლობებისთვის მსოფლიო მასშტაბით"
+    },
+    "timeline": {
+      "education": {
+        "year": "2015 — 2019",
+        "title": "კომპიუტერული მეცნიერების განათლება",
+        "description": "პროგრამული უზრუნველყოფის, ალგორითმებისა და ვებ ტექნოლოგიების საფუძვლების შექმნა."
+      },
+      "earlyCareer": {
+        "year": "2019 — 2021",
+        "title": "ადრეული Frontend განვითარება",
+        "description": "პროფესიული გზის დაწყება რესპონსიული ვებ აპლიკაციების შექმნით."
+      },
+      "syionec": {
+        "year": "2021 — დღემდე",
+        "title": "Syionec — Frontend ინჟინერი",
+        "description": "Angular განვითარების ხელმძღვანელობა fintech, აზარტული თამაშების და მშენებლობის ინდუსტრიებში."
+      },
+      "present": {
+        "year": "დღეს",
+        "title": "უფროსი Frontend ინჟინერი",
+        "description": "მასშტაბირებადი frontend არქიტექტურის მიწოდება და Angular საუკეთესო პრაქტიკების გაზიარება."
+      }
+    }
+  },
+  "experience": {
+    "label": "გამოცდილება",
+    "title": "სამუშაო გამოცდილება",
+    "subtitle": "პროფესიული გზა საწარმოო frontend გადაწყვეტილებების შექმნაში.",
+    "syionec": {
+      "company": "Syionec",
+      "role": "Frontend ინჟინერი",
+      "period": "2021 — დღემდე",
+      "items": {
+        "angular": "Angular განვითარება რთული საწარმოო აპლიკაციებისთვის",
+        "enterprise": "საწარმოო სისტემების შექმნა და მხარდაჭერა მასშტაბით",
+        "architecture": "მასშტაბირებადი frontend არქიტექტურის დიზაინი",
+        "api": "API ინტეგრაცია RESTful სერვისებთან და რეალ-ტaim მონაცემებთან",
+        "workflows": "რთული ბიზნეს პროცესებისა და state management-ის განხორციელება",
+        "modern": "თანამედროვე ვებ ტექნოლოგიებისა და საუკეთესო პრაქტიკების გამოყენება"
+      }
+    }
+  },
+  "skills": {
+    "label": "უნარები",
+    "title": "ტექნიკური უნარები",
+    "subtitle": "ტექნოლოგიები და ხელსაწყოები, რომლებითაც შესანიშნავ პროდუქტებს ვქმნი.",
+    "frontend": {
+      "title": "Frontend",
+      "angular": "Angular",
+      "typescript": "TypeScript",
+      "rxjs": "RxJS",
+      "javascript": "JavaScript",
+      "html": "HTML",
+      "css": "CSS",
+      "scss": "SCSS"
+    },
+    "architecture": {
+      "title": "არქიტექტურა",
+      "state": "State Management",
+      "rest": "REST APIs",
+      "modular": "მოდულური არქიტექტურა",
+      "performance": "წარმადობის ოპტიმიზაცია"
+    },
+    "tools": {
+      "title": "ხელსაწყოები",
+      "git": "Git",
+      "github": "GitHub",
+      "cicd": "CI/CD",
+      "agile": "Agile"
+    },
+    "ai": {
+      "title": "AI და Workflow",
+      "figma": "Figma",
+      "aiAgents": "AI აგენტები",
+      "prompting": "Prompting"
+    },
+    "descriptions": {
+      "angular": "საწარმოო SPA-ების ფრეიმვორკი — კომპონენტები, signals, routing, forms და SSR მასშტაბირებადი აპლიკაციებისთვის.",
+      "typescript": "სტატიკური ტიპizacia უსაფრთხო რефactoring-ის, გასაგები API-ებისა და მოვლადი კოდისთვის.",
+      "rxjs": "რეაქტიული ნაკადები async მონაცემების, HTTP-ის და რთული event-driven UI ლოგიკისთვის.",
+      "javascript": "ძირითადი ენა თანამედროვე ბრაუზერების, tooling-ისა და frontend ეკოსისტემისთვის.",
+      "html": "სემანტიკური, accessible markup — ყველა ინტერფეისის საფუძველი.",
+      "css": "Layout, რესპონსიული დიზაინი, ანიმაციები და თანამედროვე CSS პოლირებული UI-სთვის.",
+      "scss": "ცვლადები, mixin-ები და მოდულური stylesheets თანმიმდევრული design system-ებისთვის.",
+      "state": "NgRx, signals და service პატერნები პროგნოზირებადი application state-ისთვის.",
+      "rest": "HTTP ინტegraciis, interceptors, caching, error handling და ტიპizirebuli API ფენები.",
+      "modular": "Feature მოდულები, lazy loading და სუფთა საზღვრები დიდი აპლიკაციებისთვის.",
+      "performance": "Bundle splitting, OnPush, defer blocks და profiling სწრაფი UX-ისთვის.",
+      "git": "Branching, rebasing და совместная მუშაობა სანდო version control-ისთვის.",
+      "github": "Pull request-ები, code review, Actions და გუნდური თანამშრომლობა.",
+      "cicd": "ავტომatizirebuli build, test და deploy pipeline-ები თანმიმდევრული релизовისთვის.",
+      "agile": "Scrum, sprint planning და იტერativuli მიწოდება cross-functional გუნდებში.",
+      "figma": "Design-to-code workflow — სპეციფიკაციები, variables, კომპონენტები, Dev Mode და MCP ზუსტ UI handoff-ისთვის.",
+      "aiAgents": "Cursor და SDK აგენტები scaffolding-ის, refactoring-ის, code review-ის, debugging-ისა და CI ავტომატიზაციისთვის.",
+      "prompting": "სტრუქტურირებული prompt-ები, skills და context engineering სანდო AI-დამხარე განვითარებისთვის."
+    }
+  },
+  "projects": {
+    "label": "პროექტები",
+    "title": "რჩეული პროექტები",
+    "subtitle": "არჩეული სამუშაოები, რომლებიც აჩვენებენ საწარმოო frontend განვითარების გამოცდილებას.",
+    "viewDetails": "დეტალების ნახვა",
+    "hideDetails": "დეტალების დამალვა",
+    "fintech": {
+      "title": "Fintech Dashboard",
+      "description": "რეალ-ტaim ფინანსური ანალიტიკის დაფა ტრanzakciis monitioring-ითა და პორტფოლიოს მართვით.",
+      "details": "Angular-ითა და RxJS-ით აგებული, live მონაცემების ნაკადებით, რთული გრაფიკებითა და როლ-ბაზირებული წვდომის კონტროლით."
+    },
+    "enterprise": {
+      "title": "საწარმოო მართვის პლატფორმა",
+      "description": "ყოვლისმომცველი ბიზნეს მართვის სისტემა მრავალდეპარტამენტიანი საწარმოს ოპერაციებისთვის.",
+      "details": "მოდულური Angular არქიტექტურა lazy-loaded მოდულებით, NgRx state management-ითა და backend microservices-თან ინტეგრაციით."
+    },
+    "construction": {
+      "title": "მშენებლობის მართვის სისტემა",
+      "description": "ველის მართვის პლატფორმა მშენებლობის პროექტებისთვის რესურსების თვალყურის დევნებითა და დაგეგმვით.",
+      "details": "მობილურ-რესპონსიული Angular აპლიკაცია offline შესაძლებლობებით, GPS ინტეგრაციითა და დოკუმენტების მართვის workflow-ებით."
+    },
+    "monitoring": {
+      "title": "რეალ-ტaim მონაცემების მონიტორინგის პლატფორმა",
+      "description": "Live მონაცემების მონიტორინგისა და alerting სისტემა ოპერაციული მეტრიკებისა და KPI-ებისთვის.",
+      "details": "WebSocket-ით მუშაობს დაფა კონფიგურირებადი alerts-ით, ისტორიული მონაცემების ანალიზითა და მორგებადი widget განლაგებებით."
+    }
+  },
+  "expertise": {
+    "label": "ექსპერტიზა",
+    "title": "რაში ვარ საუკეთესო",
+    "items": {
+      "architecture": {
+        "title": "Frontend არქიტექტურა",
+        "description": "მასშტაბირებადი, მოვლადი frontend სისტემების დიზაინი, რომლებიც თქვენს ბიზნესთან ერთად იზრდება."
+      },
+      "angular": {
+        "title": "Angular განვითარება",
+        "description": "ექსpert დონის Angular განვითარება კომპონენტებიდან სრულ საწარმოო აპლიკაციებამდე."
+      },
+      "enterprise": {
+        "title": "საწარმოო აპლიკაციები",
+        "description": "მ robust აპლიკაციების შექმნა, რომლებიც რთულ ბიზნეს ლოგიკას მასშტაბით ამუშავებენ."
+      },
+      "performance": {
+        "title": "წარმადობის ოპტიმიზაცია",
+        "description": "ჩატვირთვის დროის, bundle ზომისა და runtime წარმადობის ოპტიმიზაცია უკეთესი UX-ისთვის."
+      },
+      "api": {
+        "title": "API ინტეგრაციები",
+        "description": "უპრობлемmaso ინტegraciis REST API-ებთან, WebSockets-თან და მესამე მხარის სერვისებთან."
+      },
+      "uiux": {
+        "title": "UI/UX განხორციელება",
+        "description": "დიზაინების ხელმისაწვდომ და რესპონსიულ ინტერფეისებად ქცევა გაწვეული ინტერაქციის დეტალებით."
+      },
+      "markup": {
+        "title": "Pixel-Perfect Markup",
+        "description": "სემანტიკური HTML და ზუსტი CSS, რომელიც დიზაინის სპეციფიკაციას pixel-ის სიზუსტით ემთხვევა."
+      },
+      "problemSolving": {
+        "title": "ტექნიკური პრობლემების გადაჭრა",
+        "description": "რთული გამოწვევების ეлегантურ, პრაქტიკულ გადაწყვეტილებებად დაშლა."
+      }
+    }
+  },
+  "stats": {
+    "label": "სტატისტიკა",
+    "title": "რიცხვებით",
+    "years": "წლის გამოცდილება",
+    "projects": "დასრულებული პროექტი",
+    "technologies": "გამოყენებული ტექნოლოგია",
+    "industries": "ინდუსტრია"
+  },
+  "contact": {
+    "label": "კონტაქტი",
+    "title": "დაგვიკავშირდით",
+    "subtitle": "გაინტერესებთ თანამშრომლობა? მოხარული ვიქნები თქვენი აზრის მოსმენით.",
+    "info": "საკონტაქტო ინფორმაცია",
+    "social": "დამიკავშირდით",
+    "name": "სახელი",
+    "emailLabel": "ელ-ფოსტა",
+    "phoneLabel": "ტელეფონი",
+    "availability": "ამჟამად ხელმისაწვდომი ვარ დისტანციური შესაძლებლობებისთვის მსოფლიო მასშტაბით. ვცხოვრობ თბილისში, საქართველოში (UTC+4)."
+  },
+  "footer": {
+    "title": "Frontend ინჟინერი",
+    "rights": "ყველა უფლება დაცულია."
+  },
+  "a11y": {
+    "skipToContent": "მთავარ შიგთავსზე გადასვლა"
+  }
+}

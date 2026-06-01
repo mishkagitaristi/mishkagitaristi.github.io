@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title": "Senior Frontend Engineer",
+    "subtitle": "Angular Developer specializing in enterprise applications, fintech platforms, gambling systems and scalable web solutions.",
+    "ctaProjects": "View Projects",
+    "ctaSkills": "Explore Skills",
+    "ctaContact": "Contact Me"
+  },
+  "about": {
+    "label": "About",
+    "title": "About Me",
+    "subtitle": "Building exceptional digital experiences with modern frontend technologies.",
+    "journeyTitle": "Career Journey",
+    "highlights": {
+      "developer": "Software Developer with a passion for clean, maintainable code",
+      "angular": "Strong Angular expertise across multiple major versions",
+      "typescript": "Deep experience with TypeScript and type-safe architectures",
+      "enterprise": "Proven track record building enterprise-scale applications",
+      "fintech": "Fintech industry experience with complex financial workflows",
+      "gambling": "Gambling industry experience with real-time systems",
+      "construction": "Construction industry experience with field management tools",
+      "challenges": "Passionate about solving complex technical challenges",
+      "innovation": "Always interested in innovative technologies and best practices",
+      "location": "Based in Tbilisi, Georgia",
+      "remote": "Open to remote opportunities worldwide"
+    },
+    "timeline": {
+      "education": {
+        "year": "2015 — 2019",
+        "title": "Computer Science Education",
+        "description": "Built foundational knowledge in software engineering, algorithms, and web technologies."
+      },
+      "earlyCareer": {
+        "year": "2019 — 2021",
+        "title": "Early Frontend Development",
+        "description": "Started professional journey building responsive web applications with modern JavaScript frameworks."
+      },
+      "syionec": {
+        "year": "2021 — Present",
+        "title": "Syionec — Frontend Engineer",
+        "description": "Leading Angular development for enterprise systems across fintech, gambling, and construction industries."
+      },
+      "present": {
+        "year": "Today",
+        "title": "Senior Frontend Engineer",
+        "description": "Delivering scalable frontend architecture and mentoring teams on Angular best practices."
+      }
+    }
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Work Experience",
+    "subtitle": "Professional journey building enterprise-grade frontend solutions.",
+    "syionec": {
+      "company": "Syionec",
+      "role": "Frontend Engineer",
+      "period": "2021 — Present",
+      "items": {
+        "angular": "Angular development for complex enterprise applications",
+        "enterprise": "Building and maintaining enterprise systems at scale",
+        "architecture": "Designing scalable frontend architecture patterns",
+        "api": "API integrations with RESTful services and real-time data",
+        "workflows": "Implementing complex business workflows and state management",
+        "modern": "Leveraging modern web technologies and best practices"
+      }
+    }
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I use to build exceptional products.",
+    "frontend": {
+      "title": "Frontend",
+      "angular": "Angular",
+      "typescript": "TypeScript",
+      "rxjs": "RxJS",
+      "javascript": "JavaScript",
+      "html": "HTML",
+      "css": "CSS",
+      "scss": "SCSS"
+    },
+    "architecture": {
+      "title": "Architecture",
+      "state": "State Management",
+      "rest": "REST APIs",
+      "modular": "Modular Architecture",
+      "performance": "Performance Optimization"
+    },
+    "tools": {
+      "title": "Tools",
+      "git": "Git",
+      "github": "GitHub",
+      "cicd": "CI/CD",
+      "agile": "Agile"
+    },
+    "ai": {
+      "title": "AI & Workflow",
+      "figma": "Figma",
+      "aiAgents": "AI Agents",
+      "prompting": "Prompting"
+    },
+    "descriptions": {
+      "angular": "Enterprise framework for scalable SPAs — components, signals, routing, forms, and SSR across major versions.",
+      "typescript": "Static typing for safer refactors, clearer APIs, and maintainable codebases at enterprise scale.",
+      "rxjs": "Reactive streams for async data, HTTP, WebSockets, and complex event-driven UI logic.",
+      "javascript": "Core language powering modern browsers, tooling, and the entire frontend ecosystem.",
+      "html": "Semantic, accessible markup that forms the foundation of every interface I build.",
+      "css": "Layout systems, responsive design, animations, and modern CSS for polished UIs.",
+      "scss": "Variables, mixins, and modular stylesheets for consistent, scalable design systems.",
+      "state": "NgRx, signals, and service patterns for predictable, debuggable application state.",
+      "rest": "HTTP integrations, interceptors, caching, error handling, and typed API layers.",
+      "modular": "Feature modules, lazy loading, and clean boundaries for large-scale applications.",
+      "performance": "Bundle splitting, OnPush, defer blocks, and profiling for fast user experiences.",
+      "git": "Branching, rebasing, and collaborative workflows for reliable version control.",
+      "github": "Pull requests, code review, Actions, and team collaboration on shared codebases.",
+      "cicd": "Automated build, test, and deploy pipelines for consistent, repeatable releases.",
+      "agile": "Scrum ceremonies, sprint planning, and iterative delivery in cross-functional teams.",
+      "figma": "Design-to-code workflows — specs, variables, components, Dev Mode, and MCP for accurate UI handoff.",
+      "aiAgents": "Cursor and SDK agents for scaffolding, refactors, code review, debugging, and CI automation.",
+      "prompting": "Structured prompts, skills, and context engineering for reliable AI-assisted development."
+    }
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Featured Projects",
+    "subtitle": "Selected work showcasing enterprise frontend development expertise.",
+    "viewDetails": "View Details",
+    "hideDetails": "Hide Details",
+    "fintech": {
+      "title": "Fintech Dashboard",
+      "description": "Real-time financial analytics dashboard with transaction monitoring and portfolio management.",
+      "details": "Built with Angular and RxJS, featuring live data streams, complex chart visualizations, and role-based access control for financial advisors and clients."
+    },
+    "enterprise": {
+      "title": "Enterprise Management Platform",
+      "description": "Comprehensive business management system for multi-department enterprise operations.",
+      "details": "Modular Angular architecture with lazy-loaded feature modules, NgRx state management, and seamless integration with multiple backend microservices."
+    },
+    "construction": {
+      "title": "Construction Management System",
+      "description": "Field management platform for construction projects with resource tracking and scheduling.",
+      "details": "Mobile-responsive Angular application with offline capabilities, GPS integration, real-time project updates, and document management workflows."
+    },
+    "monitoring": {
+      "title": "Real-Time Data Monitoring Platform",
+      "description": "Live data monitoring and alerting system for operational metrics and KPI tracking.",
+      "details": "WebSocket-powered dashboard with configurable alerts, historical data analysis, and customizable widget layouts for operations teams."
+    }
+  },
+  "expertise": {
+    "label": "Expertise",
+    "title": "What I Do Best",
+    "items": {
+      "architecture": {
+        "title": "Frontend Architecture",
+        "description": "Designing scalable, maintainable frontend systems that grow with your business."
+      },
+      "angular": {
+        "title": "Angular Development",
+        "description": "Expert-level Angular development from components to full enterprise applications."
+      },
+      "enterprise": {
+        "title": "Enterprise Applications",
+        "description": "Building robust applications that handle complex business logic at scale."
+      },
+      "performance": {
+        "title": "Performance Optimization",
+        "description": "Optimizing load times, bundle sizes, and runtime performance for better UX."
+      },
+      "api": {
+        "title": "API Integrations",
+        "description": "Seamless integration with REST APIs, WebSockets, and third-party services."
+      },
+      "uiux": {
+        "title": "UI/UX Implementation",
+        "description": "Translating designs into accessible, responsive interfaces with thoughtful interaction details."
+      },
+      "markup": {
+        "title": "Pixel-Perfect Markup",
+        "description": "Semantic HTML and precise CSS that matches design specs down to the pixel."
+      },
+      "problemSolving": {
+        "title": "Technical Problem Solving",
+        "description": "Breaking down complex challenges into elegant, practical solutions."
+      }
+    }
+  },
+  "stats": {
+    "label": "Statistics",
+    "title": "By the Numbers",
+    "years": "Years of Experience",
+    "projects": "Projects Delivered",
+    "technologies": "Technologies Used",
+    "industries": "Industries Worked In"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get In Touch",
+    "subtitle": "Interested in working together? I'd love to hear from you.",
+    "info": "Contact Information",
+    "social": "Connect With Me",
+    "name": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "availability": "Currently available for remote opportunities worldwide. Based in Tbilisi, Georgia (UTC+4)."
+  },
+  "footer": {
+    "title": "Frontend Engineer",
+    "rights": "All rights reserved."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  }
+}

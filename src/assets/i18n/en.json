@@ -283,6 +283,21 @@
       }
     }
   },
+  "interests": {
+    "label": "Beyond Code",
+    "title": "Interests & Hobbies",
+    "subtitle": "What keeps me curious and inspired outside of frontend development.",
+    "items": {
+      "music": {
+        "title": "Music",
+        "description": "I'm deeply in love with music. I used to be a professional bass player in a band — holding down the groove taught me how to listen, stay in sync, and be a reliable team player."
+      },
+      "robotics": {
+        "title": "Electrical Engineering & Robotics",
+        "description": "Passionate about electrical engineering and robotics — tinkering with circuits, automation, and where hardware meets software."
+      }
+    }
+  },
   "stats": {
     "label": "Statistics",
     "title": "By the Numbers",

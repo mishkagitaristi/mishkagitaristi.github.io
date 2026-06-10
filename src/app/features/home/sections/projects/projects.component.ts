@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { PROJECTS } from '../../../../core/data/portfolio.data';
-import { ProjectCardComponent } from '../../../../shared/components/project-card/project-card.component';
-import { SectionHeadingComponent } from '../../../../shared/components/section-heading/section-heading.component';
-import { cardStagger } from '../../../../shared/animations/portfolio.animations';
+import { PROJECTS } from '@core/data/projects.data';
+import { cardStagger } from '@shared/animations/portfolio.animations';
+import { ProjectCardComponent } from '@shared/components/project-card/project-card.component';
+import { SectionHeadingComponent } from '@shared/components/section-heading/section-heading.component';
 
 @Component({
   selector: 'app-projects',
@@ -37,6 +37,8 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
     </section>
   `,
   styles: `
+    @use 'styles/mixins';
+
     .projects {
       background: var(--bg-secondary);
     }
@@ -46,7 +48,7 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
       gap: 2rem;
       grid-template-columns: 1fr;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         grid-template-columns: repeat(2, 1fr);
       }
     }

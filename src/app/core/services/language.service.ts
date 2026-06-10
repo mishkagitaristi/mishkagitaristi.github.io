@@ -1,10 +1,12 @@
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { Injectable, PLATFORM_ID, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-import { Language } from '../data/portfolio.data';
+import { Language } from '@core/models/app.types';
+import { readStoredValue, writeStoredValue } from '@core/utils/storage.util';
 
 const STORAGE_KEY = 'portfolio-language';
+const VALID_LANGUAGES = ['en', 'ka'] as const;
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
@@ -18,7 +20,7 @@ export class LanguageService {
     this.translate.addLangs(['en', 'ka']);
     this.translate.setDefaultLang('en');
 
-    const lang = this.readStoredLanguage();
+    const lang = readStoredValue(STORAGE_KEY, VALID_LANGUAGES, 'en', this.platformId);
     this.setLanguage(lang);
   }
 
@@ -26,22 +28,10 @@ export class LanguageService {
     this.language.set(lang);
     this.translate.use(lang);
     this.document.documentElement.lang = lang;
-
-    if (isPlatformBrowser(this.platformId)) {
-      localStorage.setItem(STORAGE_KEY, lang);
-    }
+    writeStoredValue(STORAGE_KEY, lang, this.platformId);
   }
 
   toggleLanguage(): void {
     this.setLanguage(this.language() === 'en' ? 'ka' : 'en');
-  }
-
-  private readStoredLanguage(): Language {
-    if (!isPlatformBrowser(this.platformId)) {
-      return 'en';
-    }
-
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return stored === 'ka' ? 'ka' : 'en';
   }
 }

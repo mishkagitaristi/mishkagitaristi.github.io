@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { CAREER_TIMELINE } from '../../../../core/data/portfolio.data';
-import { SectionHeadingComponent } from '../../../../shared/components/section-heading/section-heading.component';
-import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reveal.directive';
+import { CAREER_TIMELINE } from '@core/data/career.data';
+import { SectionHeadingComponent } from '@shared/components/section-heading/section-heading.component';
+import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-about',

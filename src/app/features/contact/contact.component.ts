@@ -1,27 +1,28 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { PERSON } from '../../core/data/portfolio.data';
-import { SeoService } from '../../core/services/seo.service';
-import { GlassCardComponent } from '../../shared/components/glass-card/glass-card.component';
-import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
-import { slideInUp, routeFade } from '../../shared/animations/portfolio.animations';
+import { PERSON } from '@core/config/person.config';
+import { GlassCardComponent } from '@shared/components/glass-card/glass-card.component';
+import { SectionHeadingComponent } from '@shared/components/section-heading/section-heading.component';
+import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directive';
+import { slideInUp, routeFade } from '@shared/animations/portfolio.animations';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslateModule, GlassCardComponent, ScrollRevealDirective],
+  imports: [TranslateModule, GlassCardComponent, SectionHeadingComponent, ScrollRevealDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [slideInUp, routeFade],
   host: { '[@routeFade]': '' },
   template: `
     <section class="contact-page section" aria-labelledby="contact-page-heading" @slideInUp>
       <div class="container contact-page__inner">
-        <div class="contact-page__header">
-          <span class="contact-page__label">{{ 'contact.label' | translate }}</span>
-          <h1 id="contact-page-heading" class="contact-page__title">{{ 'contact.title' | translate }}</h1>
-          <p class="contact-page__subtitle">{{ 'contact.subtitle' | translate }}</p>
-        </div>
+        <app-section-heading
+          sectionId="contact-page-heading"
+          labelKey="contact.label"
+          titleKey="contact.title"
+          subtitleKey="contact.subtitle"
+        />
 
         <div class="contact-page__grid">
           <div appScrollReveal="up">
@@ -87,37 +88,17 @@ import { slideInUp, routeFade } from '../../shared/animations/portfolio.animatio
     </section>
   `,
   styles: `
+    @use 'styles/mixins';
+
     .contact-page__inner {
       max-width: 900px;
-    }
-
-    .contact-page__header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .contact-page__label {
-      display: inline-block;
-      font-size: 0.8125rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent-from);
-      margin-bottom: 0.75rem;
-    }
-
-    .contact-page__subtitle {
-      color: var(--text-secondary);
-      font-size: 1.0625rem;
-      margin-top: 1rem;
-      line-height: 1.7;
     }
 
     .contact-page__grid {
       display: grid;
       gap: 1.5rem;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -202,17 +183,6 @@ import { slideInUp, routeFade } from '../../shared/animations/portfolio.animatio
     }
   `,
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   protected readonly person = PERSON;
-
-  private readonly seo = inject(SeoService);
-
-  ngOnInit(): void {
-    this.seo.update({
-      title: 'Contact',
-      description: 'Get in touch with Mikheil Mamniashvili — Senior Frontend Engineer available for remote opportunities.',
-      path: '/contact',
-    });
-    this.seo.setPersonSchema();
-  }
 }

@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { PERSON } from '../../../../core/data/portfolio.data';
-import { heroEnter } from '../../../../shared/animations/portfolio.animations';
-import { AnchorLinkDirective } from '../../../../shared/directives/anchor-link.directive';
+import { PERSON } from '@core/config/person.config';
+import { heroEnter } from '@shared/animations/portfolio.animations';
+import { AnchorLinkDirective } from '@shared/directives/anchor-link.directive';
 
 @Component({
   selector: 'app-hero',

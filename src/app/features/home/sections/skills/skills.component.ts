@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { SKILL_GROUPS } from '../../../../core/data/portfolio.data';
-import { SectionHeadingComponent } from '../../../../shared/components/section-heading/section-heading.component';
-import { SkillCardComponent } from '../../../../shared/components/skill-card/skill-card.component';
-import { cardStagger } from '../../../../shared/animations/portfolio.animations';
+import { SKILL_GROUPS } from '@core/data/skills.data';
+import { cardStagger } from '@shared/animations/portfolio.animations';
+import { SectionHeadingComponent } from '@shared/components/section-heading/section-heading.component';
+import { SkillCardComponent } from '@shared/components/skill-card/skill-card.component';
 
 @Component({
   selector: 'app-skills',
@@ -50,6 +50,8 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
     </section>
   `,
   styles: `
+    @use 'styles/mixins';
+
     .skills__groups {
       display: flex;
       flex-direction: column;
@@ -67,11 +69,11 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
       gap: 0.75rem;
       grid-template-columns: 1fr;
 
-      @media (min-width: 640px) {
+      @include mixins.respond-to(sm) {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @media (min-width: 1024px) {
+      @include mixins.respond-to(lg) {
         grid-template-columns: repeat(3, 1fr);
       }
     }

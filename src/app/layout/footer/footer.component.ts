@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { PERSON } from '../../core/data/portfolio.data';
-import { LanguageSwitcherComponent } from '../../shared/components/language-switcher/language-switcher.component';
-import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme-toggle.component';
+import { PERSON } from '@core/config/person.config';
+import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
+import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-footer',
@@ -40,6 +40,8 @@ import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme
     </footer>
   `,
   styles: `
+    @use 'styles/mixins';
+
     .footer {
       border-top: 1px solid var(--border-subtle);
       padding: 3rem 0 2rem;
@@ -51,7 +53,7 @@ import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme
       gap: 2rem;
       text-align: center;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         grid-template-columns: 1fr auto auto;
         text-align: left;
         align-items: center;
@@ -74,7 +76,7 @@ import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme
       gap: 1.5rem;
       justify-content: center;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         justify-content: flex-start;
       }
     }
@@ -94,7 +96,7 @@ import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme
       gap: 0.5rem;
       justify-content: center;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         justify-content: flex-end;
       }
     }

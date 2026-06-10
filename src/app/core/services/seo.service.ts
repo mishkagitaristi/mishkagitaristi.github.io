@@ -2,7 +2,9 @@ import { DOCUMENT } from '@angular/common';
 import { Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { PERSON } from '../data/portfolio.data';
+import { PERSON } from '@core/config/person.config';
+import { PROJECTS } from '@core/data/projects.data';
+import { SKILL_GROUPS } from '@core/data/skills.data';
 
 export interface SeoConfig {
   title: string;
@@ -52,20 +54,32 @@ export class SeoService {
         addressCountry: 'GE',
       },
       sameAs: [PERSON.linkedin, PERSON.github],
-      knowsAbout: [
-        'Angular',
-        'TypeScript',
-        'Micro Frontends',
-        'NgRx',
-        'RxJS',
-        'Jest',
-        'Storybook',
-        'Frontend Development',
-        'Enterprise Applications',
-      ],
+      knowsAbout: this.collectSkillTags(),
     };
 
     this.injectJsonLd('person-schema', schema);
+  }
+
+  private collectSkillTags(): string[] {
+    const tags = new Set<string>();
+
+    for (const group of SKILL_GROUPS) {
+      for (const skill of group.skills) {
+        const label = skill.id
+          .split('-')
+          .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+          .join(' ');
+        tags.add(label);
+      }
+    }
+
+    for (const project of PROJECTS) {
+      for (const tag of project.tags) {
+        tags.add(tag);
+      }
+    }
+
+    return [...tags].sort();
   }
 
   private updateCanonical(url: string): void {

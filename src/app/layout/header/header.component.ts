@@ -2,28 +2,26 @@ import {
   ChangeDetectionStrategy,
   Component,
   HostListener,
-  inject,
   signal,
 } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
-import { NAV_ITEMS, PERSON } from '../../core/data/portfolio.data';
-import { menuSlide } from '../../shared/animations/portfolio.animations';
-import { LanguageSwitcherComponent } from '../../shared/components/language-switcher/language-switcher.component';
-import { ThemeToggleComponent } from '../../shared/components/theme-toggle/theme-toggle.component';
-import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directive';
+import { NAV_ITEMS } from '@core/config/nav.config';
+import { PERSON } from '@core/config/person.config';
+import { personFirstName } from '@core/utils/person.util';
+import { menuSlide } from '@shared/animations/portfolio.animations';
+import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
+import { NavLinkComponent } from '@shared/components/nav-link/nav-link.component';
+import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     RouterLink,
-    RouterLinkActive,
-    TranslateModule,
     ThemeToggleComponent,
     LanguageSwitcherComponent,
-    AnchorLinkDirective,
+    NavLinkComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [menuSlide],
@@ -31,43 +29,18 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
     <header class="header" [class.header--scrolled]="scrolled()">
       <div class="header__inner container">
         <a routerLink="/" class="header__logo" (click)="closeMenu()">
-          <span class="header__logo-name">{{ person.name.split(' ')[0] }}</span>
+          <span class="header__logo-name">{{ firstName }}</span>
           <span class="header__logo-dot">.</span>
         </a>
 
         <nav class="header__nav" aria-label="Main navigation">
           @for (item of navItems; track item.id) {
-            @if (item.fragment) {
-              <a
-                class="header__link"
-                routerLink="/"
-                [fragment]="item.fragment"
-                [appAnchorLink]="item.fragment"
-                routerLinkActive="header__link--active"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            } @else if (item.route === '/contact') {
-              <a
-                class="header__link"
-                routerLink="/contact"
-                routerLinkActive="header__link--active"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            } @else {
-              <a
-                class="header__link"
-                routerLink="/"
-                routerLinkActive="header__link--active"
-                [routerLinkActiveOptions]="{ exact: true }"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            }
+            <app-nav-link
+              [item]="item"
+              linkClass="header__link"
+              activeClass="header__link--active"
+              (navigated)="closeMenu()"
+            />
           }
         </nav>
 
@@ -99,36 +72,12 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
           @menuSlide
         >
           @for (item of navItems; track item.id; let i = $index) {
-            @if (item.fragment) {
-              <a
-                class="header__mobile-link"
-                routerLink="/"
-                [fragment]="item.fragment"
-                [appAnchorLink]="item.fragment"
-                [style.animation-delay.ms]="i * 50"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            } @else if (item.route === '/contact') {
-              <a
-                class="header__mobile-link"
-                routerLink="/contact"
-                [style.animation-delay.ms]="i * 50"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            } @else {
-              <a
-                class="header__mobile-link"
-                routerLink="/"
-                [style.animation-delay.ms]="i * 50"
-                (click)="closeMenu()"
-              >
-                {{ item.labelKey | translate }}
-              </a>
-            }
+            <app-nav-link
+              [item]="item"
+              linkClass="header__mobile-link"
+              [animationDelayMs]="i * 50"
+              (navigated)="closeMenu()"
+            />
           }
           <div class="header__mobile-actions">
             <app-language-switcher />
@@ -188,7 +137,7 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
       }
     }
 
-    .header__link {
+    :host ::ng-deep .header__link {
       padding: 0.5rem 0.875rem;
       font-size: 0.875rem;
       font-weight: 500;
@@ -198,11 +147,11 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
       position: relative;
 
       &:hover,
-      &--active {
+      &.header__link--active {
         color: var(--text-primary);
       }
 
-      &--active::after {
+      &.header__link--active::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -280,7 +229,7 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
       }
     }
 
-    .header__mobile-link {
+    :host ::ng-deep .header__mobile-link {
       padding: 1rem;
       font-size: 1.25rem;
       font-weight: 500;
@@ -299,7 +248,7 @@ import { AnchorLinkDirective } from '../../shared/directives/anchor-link.directi
 })
 export class HeaderComponent {
   protected readonly navItems = NAV_ITEMS;
-  protected readonly person = PERSON;
+  protected readonly firstName = personFirstName(PERSON.name);
 
   protected readonly scrolled = signal(false);
   protected readonly menuOpen = signal(false);

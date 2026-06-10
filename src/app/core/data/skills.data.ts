@@ -1,0 +1,97 @@
+import { SkillGroup } from '@core/models/portfolio.models';
+
+export const SKILL_GROUPS: SkillGroup[] = [
+  {
+    id: 'core',
+    titleKey: 'skills.core.title',
+    skills: [
+      { id: 'angular', nameKey: 'skills.core.angular', descriptionKey: 'skills.descriptions.angular' },
+      { id: 'ngrx', nameKey: 'skills.core.ngrx', descriptionKey: 'skills.descriptions.ngrx' },
+      { id: 'signals', nameKey: 'skills.core.signals', descriptionKey: 'skills.descriptions.signals' },
+      { id: 'rxjs', nameKey: 'skills.core.rxjs', descriptionKey: 'skills.descriptions.rxjs' },
+      { id: 'typescript', nameKey: 'skills.core.typescript', descriptionKey: 'skills.descriptions.typescript' },
+      { id: 'javascript', nameKey: 'skills.core.javascript', descriptionKey: 'skills.descriptions.javascript' },
+      { id: 'jest', nameKey: 'skills.core.jest', descriptionKey: 'skills.descriptions.jest' },
+      { id: 'jasmine', nameKey: 'skills.core.jasmine', descriptionKey: 'skills.descriptions.jasmine' },
+      { id: 'cypress', nameKey: 'skills.core.cypress', descriptionKey: 'skills.descriptions.cypress' },
+    ],
+  },
+  {
+    id: 'uiux',
+    titleKey: 'skills.uiux.title',
+    skills: [
+      { id: 'html', nameKey: 'skills.uiux.html', descriptionKey: 'skills.descriptions.html' },
+      { id: 'css', nameKey: 'skills.uiux.css', descriptionKey: 'skills.descriptions.css' },
+      { id: 'responsive', nameKey: 'skills.uiux.responsive', descriptionKey: 'skills.descriptions.responsive' },
+      { id: 'tailwind', nameKey: 'skills.uiux.tailwind', descriptionKey: 'skills.descriptions.tailwind' },
+      { id: 'bem', nameKey: 'skills.uiux.bem', descriptionKey: 'skills.descriptions.bem' },
+      { id: 'figma', nameKey: 'skills.uiux.figma', descriptionKey: 'skills.descriptions.figma' },
+      { id: 'adobe-xd', nameKey: 'skills.uiux.adobeXd', descriptionKey: 'skills.descriptions.adobeXd' },
+      { id: 'material', nameKey: 'skills.uiux.material', descriptionKey: 'skills.descriptions.material' },
+      { id: 'storybook', nameKey: 'skills.uiux.storybook', descriptionKey: 'skills.descriptions.storybook' },
+    ],
+  },
+  {
+    id: 'architecture',
+    titleKey: 'skills.architecture.title',
+    skills: [
+      { id: 'mfe', nameKey: 'skills.architecture.mfe', descriptionKey: 'skills.descriptions.mfe' },
+      { id: 'oop', nameKey: 'skills.architecture.oop', descriptionKey: 'skills.descriptions.oop' },
+      { id: 'solid', nameKey: 'skills.architecture.solid', descriptionKey: 'skills.descriptions.solid' },
+      { id: 'kiss', nameKey: 'skills.architecture.kiss', descriptionKey: 'skills.descriptions.kiss' },
+      { id: 'state', nameKey: 'skills.architecture.state', descriptionKey: 'skills.descriptions.state' },
+      { id: 'performance', nameKey: 'skills.architecture.performance', descriptionKey: 'skills.descriptions.performance' },
+    ],
+  },
+  {
+    id: 'tools',
+    titleKey: 'skills.tools.title',
+    skills: [
+      { id: 'webpack', nameKey: 'skills.tools.webpack', descriptionKey: 'skills.descriptions.webpack' },
+      { id: 'vite', nameKey: 'skills.tools.vite', descriptionKey: 'skills.descriptions.vite' },
+      { id: 'rest', nameKey: 'skills.tools.rest', descriptionKey: 'skills.descriptions.rest' },
+      { id: 'git', nameKey: 'skills.tools.git', descriptionKey: 'skills.descriptions.git' },
+      { id: 'cicd', nameKey: 'skills.tools.cicd', descriptionKey: 'skills.descriptions.cicd' },
+      { id: 'postman', nameKey: 'skills.tools.postman', descriptionKey: 'skills.descriptions.postman' },
+      { id: 'eslint', nameKey: 'skills.tools.eslint', descriptionKey: 'skills.descriptions.eslint' },
+      { id: 'sonarqube', nameKey: 'skills.tools.sonarqube', descriptionKey: 'skills.descriptions.sonarqube' },
+      { id: 'agile', nameKey: 'skills.tools.agile', descriptionKey: 'skills.descriptions.agile' },
+      { id: 'jira', nameKey: 'skills.tools.jira', descriptionKey: 'skills.descriptions.jira' },
+      { id: 'notion', nameKey: 'skills.tools.notion', descriptionKey: 'skills.descriptions.notion' },
+      { id: 'slack', nameKey: 'skills.tools.slack', descriptionKey: 'skills.descriptions.slack' },
+    ],
+  },
+  {
+    id: 'softSkills',
+    titleKey: 'skills.softSkills.title',
+    display: 'tags',
+    skills: [
+      { id: 'communication', nameKey: 'skills.softSkills.communication', descriptionKey: 'skills.softSkills.communication' },
+      { id: 'empathy', nameKey: 'skills.softSkills.empathy', descriptionKey: 'skills.softSkills.empathy' },
+      { id: 'ownership', nameKey: 'skills.softSkills.ownership', descriptionKey: 'skills.softSkills.ownership' },
+      { id: 'problemSolving', nameKey: 'skills.softSkills.problemSolving', descriptionKey: 'skills.softSkills.problemSolving' },
+      { id: 'criticalThinking', nameKey: 'skills.softSkills.criticalThinking', descriptionKey: 'skills.softSkills.criticalThinking' },
+      { id: 'mentoring', nameKey: 'skills.softSkills.mentoring', descriptionKey: 'skills.softSkills.mentoring' },
+      { id: 'independence', nameKey: 'skills.softSkills.independence', descriptionKey: 'skills.softSkills.independence' },
+      { id: 'learning', nameKey: 'skills.softSkills.learning', descriptionKey: 'skills.softSkills.learning' },
+    ],
+  },
+  {
+    id: 'languages',
+    titleKey: 'skills.languages.title',
+    display: 'tags',
+    skills: [
+      { id: 'english', nameKey: 'skills.languages.english', descriptionKey: 'skills.languages.english' },
+      { id: 'georgian', nameKey: 'skills.languages.georgian', descriptionKey: 'skills.languages.georgian' },
+      { id: 'russian', nameKey: 'skills.languages.russian', descriptionKey: 'skills.languages.russian' },
+    ],
+  },
+  {
+    id: 'ai',
+    titleKey: 'skills.ai.title',
+    skills: [
+      { id: 'ai-agents', nameKey: 'skills.ai.aiAgents', descriptionKey: 'skills.descriptions.aiAgents' },
+      { id: 'prompting', nameKey: 'skills.ai.prompting', descriptionKey: 'skills.descriptions.prompting' },
+    ],
+  },
+];

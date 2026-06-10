@@ -23,7 +23,6 @@ export class AnchorScrollService {
 
     if (onSameRoute) {
       void this.router.navigate([normalizedRoute], { fragment, replaceUrl: true }).then(scroll);
-      scroll();
       return;
     }
 

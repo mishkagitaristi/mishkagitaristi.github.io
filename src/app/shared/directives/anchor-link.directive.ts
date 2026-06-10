@@ -1,6 +1,6 @@
 import { Directive, HostListener, inject, input } from '@angular/core';
 
-import { AnchorScrollService } from '../../core/services/anchor-scroll.service';
+import { AnchorScrollService } from '@core/services/anchor-scroll.service';
 
 @Directive({
   selector: 'a[appAnchorLink]',

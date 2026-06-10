@@ -1,9 +1,11 @@
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { Injectable, PLATFORM_ID, inject, signal } from '@angular/core';
 
-import { Theme } from '../data/portfolio.data';
+import { Theme } from '@core/models/app.types';
+import { readStoredValue, writeStoredValue } from '@core/utils/storage.util';
 
 const STORAGE_KEY = 'portfolio-theme';
+const VALID_THEMES = ['dark', 'light'] as const;
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
@@ -12,8 +14,10 @@ export class ThemeService {
 
   readonly theme = signal<Theme>('dark');
 
-  constructor() {
-    this.initTheme();
+  init(): void {
+    const stored = readStoredValue(STORAGE_KEY, VALID_THEMES, 'dark', this.platformId);
+    this.theme.set(stored);
+    this.applyTheme(stored);
   }
 
   toggleTheme(): void {
@@ -23,25 +27,7 @@ export class ThemeService {
   setTheme(theme: Theme): void {
     this.theme.set(theme);
     this.applyTheme(theme);
-
-    if (isPlatformBrowser(this.platformId)) {
-      localStorage.setItem(STORAGE_KEY, theme);
-    }
-  }
-
-  private initTheme(): void {
-    const stored = this.readStoredTheme();
-    this.theme.set(stored);
-    this.applyTheme(stored);
-  }
-
-  private readStoredTheme(): Theme {
-    if (!isPlatformBrowser(this.platformId)) {
-      return 'dark';
-    }
-
-    const stored = localStorage.getItem(STORAGE_KEY);
-    return stored === 'light' ? 'light' : 'dark';
+    writeStoredValue(STORAGE_KEY, theme, this.platformId);
   }
 
   private applyTheme(theme: Theme): void {

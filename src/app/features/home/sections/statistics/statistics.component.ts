@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { STATS } from '../../../../core/data/portfolio.data';
-import { AnimatedCounterComponent } from '../../../../shared/components/animated-counter/animated-counter.component';
-import { SectionHeadingComponent } from '../../../../shared/components/section-heading/section-heading.component';
-import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reveal.directive';
+import { STATS } from '@core/data/stats.data';
+import { AnimatedCounterComponent } from '@shared/components/animated-counter/animated-counter.component';
+import { SectionHeadingComponent } from '@shared/components/section-heading/section-heading.component';
+import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-statistics',
@@ -32,6 +32,8 @@ import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reve
     </section>
   `,
   styles: `
+    @use 'styles/mixins';
+
     .statistics {
       background: var(--bg-secondary);
     }
@@ -41,7 +43,7 @@ import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reve
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
 
-      @media (min-width: 768px) {
+      @include mixins.respond-to(md) {
         grid-template-columns: repeat(4, 1fr);
       }
     }

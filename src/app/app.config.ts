@@ -7,7 +7,9 @@ import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { routes } from './app.routes';
-import { LanguageService } from './core/services/language.service';
+import { LanguageService } from '@core/services/language.service';
+import { SeoRouteListener } from '@core/services/seo-route.listener';
+import { ThemeService } from '@core/services/theme.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -30,6 +32,8 @@ export const appConfig: ApplicationConfig = {
     }),
     provideAppInitializer(() => {
       inject(LanguageService).init();
+      inject(ThemeService).init();
+      inject(SeoRouteListener).init();
     }),
   ],
 };

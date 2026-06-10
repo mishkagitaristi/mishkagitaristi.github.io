@@ -1,15 +1,15 @@
-import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { SeoService } from '../../core/services/seo.service';
-import { routeFade } from '../../shared/animations/portfolio.animations';
-import { HeroComponent } from './sections/hero/hero.component';
-import { AboutComponent } from './sections/about/about.component';
-import { ExperienceComponent } from './sections/experience/experience.component';
-import { EducationComponent } from './sections/education/education.component';
-import { SkillsComponent } from './sections/skills/skills.component';
-import { ProjectsComponent } from './sections/projects/projects.component';
-import { ExpertiseComponent } from './sections/expertise/expertise.component';
-import { StatisticsComponent } from './sections/statistics/statistics.component';
+import { routeFade } from '@shared/animations/portfolio.animations';
+import { AboutComponent } from '@features/home/sections/about/about.component';
+import { EducationComponent } from '@features/home/sections/education/education.component';
+import { ExperienceComponent } from '@features/home/sections/experience/experience.component';
+import { ExpertiseComponent } from '@features/home/sections/expertise/expertise.component';
+import { InterestsComponent } from '@features/home/sections/interests/interests.component';
+import { HeroComponent } from '@features/home/sections/hero/hero.component';
+import { ProjectsComponent } from '@features/home/sections/projects/projects.component';
+import { SkillsComponent } from '@features/home/sections/skills/skills.component';
+import { StatisticsComponent } from '@features/home/sections/statistics/statistics.component';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +22,7 @@ import { StatisticsComponent } from './sections/statistics/statistics.component'
     SkillsComponent,
     ProjectsComponent,
     ExpertiseComponent,
+    InterestsComponent,
     StatisticsComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -39,6 +40,7 @@ import { StatisticsComponent } from './sections/statistics/statistics.component'
       <div class="defer-placeholder" aria-hidden="true"></div>
     }
     <app-expertise />
+    <app-interests />
     @defer (on viewport) {
       <app-statistics />
     } @placeholder {
@@ -51,16 +53,4 @@ import { StatisticsComponent } from './sections/statistics/statistics.component'
     }
   `,
 })
-export class HomeComponent implements OnInit {
-  private readonly seo = inject(SeoService);
-
-  ngOnInit(): void {
-    this.seo.update({
-      title: 'Senior Frontend Engineer',
-      description:
-        'Mikheil Mamniashvili — Senior Frontend Engineer with 6+ years in Angular, TypeScript, and micro-frontend architecture. Delivered 10+ applications across SaaS, fintech, gambling, and construction at Syniotec and Singular.',
-      path: '/',
-    });
-    this.seo.setPersonSchema();
-  }
-}
+export class HomeComponent {}

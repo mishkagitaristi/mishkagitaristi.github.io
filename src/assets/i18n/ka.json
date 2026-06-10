@@ -3,6 +3,7 @@
     "home": "მთავარი",
     "about": "ჩემს შესახებ",
     "experience": "გამოცდილება",
+    "education": "განათლება",
     "skills": "უნარები",
     "projects": "პროექტები",
     "contact": "კონტაქტი"
@@ -10,7 +11,7 @@
   "hero": {
     "greeting": "გამარჯობა, მე ვარ",
     "title": "უფროსი Frontend ინჟინერი",
-    "subtitle": "Angular დეველოპერი, რომელიც სპეციალიზირდება საწარმოო აპლიკაციებში, fintech პლატფორმებში, აზარტული თამაშების სისტემებში და მასშტაბირებად ვებ გადაწყვეტილებებში.",
+    "subtitle": "6+ წლის გამოცდილებით Angular-ში, TypeScript-ში და micro-frontend არქიტექტურაში, 10+ რეალური აპლიკაცია მივაწოდე მაღალი ტრაფიკის SaaS, fintech, აზარტული თამაშებისა და მშენებლობის ინდუსტრიებში.",
     "ctaProjects": "პროექტების ნახვა",
     "ctaSkills": "უნარების ნახვა",
     "ctaContact": "დაგვიკავშირდით"
@@ -19,40 +20,28 @@
     "label": "ჩემს შესახებ",
     "title": "ჩემს შესახებ",
     "subtitle": "შესანიშნავი ციფრული გამოცდილების შექმნა თანამედროვე frontend ტექნოლოგიებით.",
+    "summary": "6+ წლის გამოცდილებით Angular-ში, TypeScript-ში და micro-frontend არქიტექტურაში, 10+ რეალური აპლიკაცია მივაწოდე მაღალი ტრაფიკის SaaS, fintech, აზარტული თამაშებისა და მშენებლობის ინდუსტრიებში. ვიცი NgRx, Signals, RxJS და ES6+; სპეციალიზირდები ძველი სისტემების მოდერნიზაციაში და მასშტაბირებად, pixel-perfect frontend გადაწყვეტილებების შექმნაში. გატაცებული ვარ რთული პრობლემების გადაჭრითა და UI/UX-ის გაუმჯობესებით — ტექნიკური სიზუსტეს ვურთავ პროაქტიურ, მომხმარებელზე ორიენტირებულ მიდგომას. კარგად ვგრძნობ თავს თანამშრომლობით გარემოში, ვმენტორებ გუნდის წევრებს და ვწვილიავ უწყვეტ ინოვაციასა და პროდუქტის ხარისხს.",
     "journeyTitle": "კარიერული გზა",
-    "highlights": {
-      "developer": "პროგრამისტი, რომელსაც სურს სუფთა და მოვლადი კოდის შექმნა",
-      "angular": "ძლიერი Angular გამოცდილება რამდენიმე მთავარ ვერსიაზე",
-      "typescript": "ღრმა გამოცდილება TypeScript-თან და ტიპ-უსაფრთხო არქიტექტურებთან",
-      "enterprise": "დადასტურებული გამოცდილება საწარმოო მასშტაბის აპლიკაციების შექმნაში",
-      "fintech": "Fintech ინდუსტრიის გამოცდილება რთული ფინანსური პროცესებით",
-      "gambling": "აზარტული თამაშების ინდუსტრიის გამოცდილება რეალ-დროის სისტემებით",
-      "construction": "მშენებლობის ინდუსტრიის გამოცდილება ველის მართვის ხელსაწყოებით",
-      "challenges": "გატაცებული რთული ტექნიკური გამოწვევების გადაჭრით",
-      "innovation": "ყოველთვის დაინტერესებული ინოვაციური ტექნოლოგიებითა და საუკეთესო პრაქტიკებით",
-      "location": "ცხოვრობს თბილისში, საქართველოში",
-      "remote": "ღიაა დისტანციური შესაძლებლობებისთვის მსოფლიო მასშტაბით"
-    },
     "timeline": {
       "education": {
-        "year": "2015 — 2019",
-        "title": "კომპიუტერული მეცნიერების განათლება",
-        "description": "პროგრამული უზრუნველყოფის, ალგორითმებისა და ვებ ტექნოლოგიების საფუძვლების შექმნა."
+        "year": "2014 — 2018",
+        "title": "საქართველოს ტექნიკური უნივერსიტეტი",
+        "description": "ინფორმატიკის ბაკალავრის ხარისხი — პროგრამული უზრუნველყოფის, ალგორითმებისა და ვებ ტექნოლოგიების საფუძვლები."
       },
-      "earlyCareer": {
-        "year": "2019 — 2021",
-        "title": "ადრეული Frontend განვითარება",
-        "description": "პროფესიული გზის დაწყება რესპონსიული ვებ აპლიკაციების შექმნით."
+      "techub": {
+        "year": "2019",
+        "title": "Israel Techub",
+        "description": "Frontend განვითარების კურსი — თანამედროვე JavaScript ფრეიმვორკებისა და ვებ განვითარების ინტენსიური ტრენინგი."
       },
-      "syionec": {
-        "year": "2021 — დღემდე",
-        "title": "Syionec — Frontend ინჟინერი",
-        "description": "Angular განვითარების ხელმძღვანელობა fintech, აზარტული თამაშების და მშენებლობის ინდუსტრიებში."
+      "singular": {
+        "year": "2019 — 2022",
+        "title": "Singular — Frontend დეველოპერი",
+        "description": "ინტერნიდან middle დეველოპერამდე რთულ iGaming სპორტბუქ აპლიკაციაზე, 10+ frontend დეველოპერის გუნდში."
       },
-      "present": {
-        "year": "დღეს",
-        "title": "უფროსი Frontend ინჟინერი",
-        "description": "მასშტაბირებადი frontend არქიტექტურის მიწოდება და Angular საუკეთესო პრაქტიკების გაზიარება."
+      "syniotec": {
+        "year": "2022 — დღემდე",
+        "title": "Syniotec — Frontend დეველოპერი",
+        "description": "Middle-დან senior დონემდე Angular micro-frontend-ების, კომპონენტების ბიბლიოთეკებისა და საწარმოო გადაწყვეტილებების შექმნა მშენებლობისა და SaaS ინდუსტრიებში."
       }
     }
   },
@@ -60,71 +49,171 @@
     "label": "გამოცდილება",
     "title": "სამუშაო გამოცდილება",
     "subtitle": "პროფესიული გზა საწარმოო frontend გადაწყვეტილებების შექმნაში.",
-    "syionec": {
-      "company": "Syionec",
-      "role": "Frontend ინჟინერი",
-      "period": "2021 — დღემდე",
+    "syniotec": {
+      "company": "Syniotec",
+      "role": "Frontend დეველოპერი — Middle-დან Senior-მდე",
+      "period": "ოქტ. 2022 — დღემდე",
+      "location": "თბილისი, საქართველო",
       "items": {
-        "angular": "Angular განვითარება რთული საწარმოო აპლიკაციებისთვის",
-        "enterprise": "საწარმოო სისტემების შექმნა და მხარდაჭერა მასშტაბით",
-        "architecture": "მასშტაბირებადი frontend არქიტექტურის დიზაინი",
-        "api": "API ინტეგრაცია RESTful სერვისებთან და რეალ-ტaim მონაცემებთან",
-        "workflows": "რთული ბიზნეს პროცესებისა და state management-ის განხორციელება",
-        "modern": "თანამედროვე ვებ ტექნოლოგიებისა და საუკეთესო პრაქტიკების გამოყენება"
+        "angular": "კრიტიკული ფუნქციების შექმნა და მხარდაჭერა Angular 17–19, TypeScript და Micro Frontend არქიტექტურით, მასშტაბირებადი და მოვლადი გადაწყვეტილებების მიწოდება",
+        "legacy": "ძველი Angular (v12) გვერდების რეფაქტორინგი v17+-მდე, გვერდის ჩატვირთვის წარმადობის 35–50%-ით გაუმჯობესება lazy loading-ით, NgRx Signals-ით და performance debugging-ით",
+        "storybook": "საკუთარი კომპონენტების ბიბლიოთეკის დიზაინი და განვითარება Storybook-ით, UI თანმიმდევრულობისა და დეველოპერების ეფექტურობის გაზრდა 3+ გუნდში",
+        "testing": "90%+ ტესტის დაფარვის იმპლემენტაციის ხელმძღვანელობა Jest-ით, კოდის საიმედოობის გაზრდა და CI/CD pipeline-ის გაძლიერება",
+        "uiux": "UI/UX გაუმჯობესებების ხელშეწყობა feature grooming სესიებზე, cross-functional გუნდებთან თანამშრომლობა მომხმარებლის ნაკადების დასახვევად",
+        "planning": "პროაქტიური წვლილი პროდუქტის დაგეგმვასა და იდეაციაში, ახალი ფუნქციებისა და დიზაინის გაუმჯობესებების მიმართულების გავლენა",
+        "mfe": "ხუთი micro frontend-ის მართვა და ინტეგრაცია პლატფორმაში, სუფთა არქიტექტურისა და გладкой დეპლოიმენტის უზრუნველყოფა",
+        "library": "საერთო custom ბიბლიოთეკის მხარდაჭერა და განვითარება, კომპონენტების გამოყენებადობისა და თანმიმდევრულობის უზრუნველყოფა",
+        "collaboration": "ახლო თანამშრომლობა backend ინჟინერებთან და QA-თან მყარი ფუნქციების მიწოდებისა და გლუვი handoff-ისთვის",
+        "reviews": "რეგულარული code review-ები კოდის ხარისხის სტანდარტებისა და საუკეთესო პრაქტიკების დასაცავად",
+        "mentoring": "Junior დეველოპერების მენტორობა — ტექნიკური ხელმძღვანელობა, კოდის feedback და არქიტექტურული რჩევები",
+        "uml": "UML დიაგრამების ადოპტირების ინიციატივა რთული workflow-ების ვიზუალიზაციისა და არქიტექტურული გაგების გასაუმჯობესებლად",
+        "modern": "Angular-ისა და TypeScript-ის უახლესი ფუნქციების უწყვეტი ინტეგრაცია განვითარების workflow-ებში თანამედროვე კოდბეისის შესანარჩუნებლად"
       }
+    },
+    "singular": {
+      "company": "Singular",
+      "role": "Frontend დეველოპერი — Intern-დან Middle-მდე",
+      "period": "იან. 2019 — ოქტ. 2022",
+      "location": "თბილისი, საქართველო",
+      "items": {
+        "sportsbook": "მრავალი საკვანძო ფუნქციის განვითარება და რელიზი რთულ iGaming სპორტბუქ აპლიკაციაში",
+        "mobile": "Mobile-first დიზაინების შექმნა მოწყობილობებსა და პლატფორმებს შორის უკეთესი გამოყენებისთვის",
+        "mentoring": "Junior დეველოპერების მენტორობა — ტექნიკური ხელმძღვანელობა, კოდის feedback და არქიტექტურული რჩევები",
+        "reviews": "რეგულარული code review-ები კოდის ხარისხის სტანდარტებისა და საუკეთესო პრაქტიკების დასაცავად",
+        "performance": "აპლიკაციის წარმადობისა და UX-ის გაუმჯობესება bug fix-ებითა და კოდის ოპტიმიზაციით",
+        "structure": "ფაილების სტრუქტურის გაუმჯობესება და დიზაინი, შემდეგ იმპლემენტაცია",
+        "team": "დამოუკიდებლად და 10+ frontend დეველოპერის გუნდში მუშაობა, საერთაშორისო დიზაინერებთან, backend-თან, PO/PM-ებთან, QA-თან და BA-თან თანამშრომლობა"
+      }
+    }
+  },
+  "education": {
+    "label": "განათლება",
+    "title": "განათლება",
+    "subtitle": "აკადემიური ფონი და პროფესიული ტრენინგი.",
+    "gtu": {
+      "institution": "საქართველოს ტექნიკური უნივერსიტეტი",
+      "credential": "ინფორმატიკის ბაკალავრის ხარისხი",
+      "period": "2014 — 2018",
+      "description": "კომპიუტერული მეცნიერების საფუძვლები, პროგრამული უზრუნველყოფის პრინციპები და ინფორმაციული სისტემები."
+    },
+    "techub": {
+      "institution": "Israel Techub",
+      "credential": "Frontend განვითარების კურსი",
+      "period": "2019",
+      "description": "ინტენსიური პროგრამა თანამედროვე JavaScript-ზე, HTML/CSS-ზე, რესპონსიულ დიზაინზე და frontend ფრეიმვორკებზე."
     }
   },
   "skills": {
     "label": "უნარები",
     "title": "ტექნიკური უნარები",
     "subtitle": "ტექნოლოგიები და ხელსაწყოები, რომლებითაც შესანიშნავ პროდუქტებს ვქმნი.",
-    "frontend": {
-      "title": "Frontend",
+    "core": {
+      "title": "ძირითადი ტექნოლოგიები",
       "angular": "Angular",
-      "typescript": "TypeScript",
+      "ngrx": "NgRx",
+      "signals": "Signals",
       "rxjs": "RxJS",
-      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript (ES6+)",
+      "jest": "Jest",
+      "jasmine": "Jasmine",
+      "cypress": "Cypress"
+    },
+    "uiux": {
+      "title": "UI/UX",
       "html": "HTML",
-      "css": "CSS",
-      "scss": "SCSS"
+      "css": "CSS / SASS / LESS",
+      "responsive": "რესპონსიული ვებ დიზაინი",
+      "tailwind": "Tailwind",
+      "bem": "BEM",
+      "figma": "Figma",
+      "adobeXd": "Adobe XD",
+      "material": "Material UI",
+      "storybook": "Storybook"
     },
     "architecture": {
       "title": "არქიტექტურა",
+      "mfe": "Micro Frontend არქიტექტურა",
+      "oop": "OOP",
+      "solid": "SOLID",
+      "kiss": "KISS",
       "state": "State Management",
-      "rest": "REST APIs",
-      "modular": "მოდულური არქიტექტურა",
       "performance": "წარმადობის ოპტიმიზაცია"
     },
     "tools": {
       "title": "ხელსაწყოები",
-      "git": "Git",
-      "github": "GitHub",
+      "webpack": "Webpack",
+      "vite": "Vite",
+      "rest": "REST APIs",
+      "git": "Git / GitHub / Bitbucket",
       "cicd": "CI/CD",
-      "agile": "Agile"
+      "postman": "Postman",
+      "eslint": "ESLint",
+      "sonarqube": "SonarQube",
+      "agile": "Agile (Scrum, Kanban)",
+      "jira": "JIRA",
+      "notion": "Notion",
+      "slack": "Slack"
+    },
+    "softSkills": {
+      "title": "რბილი უნარები",
+      "communication": "კომუნიკაცია და გუნდური მუშაობა",
+      "empathy": "ემპათია",
+      "ownership": "პასუხისმგებლობა",
+      "problemSolving": "პრობლემების გადაჭრა",
+      "criticalThinking": "კრიტიკული აზროვნება",
+      "mentoring": "მენტორობა",
+      "independence": "დამოუკიდებელი მუშაობა",
+      "learning": "უწყვეტი სწავლა"
+    },
+    "languages": {
+      "title": "ენები",
+      "english": "ინგლისური (B2)",
+      "georgian": "ქართული (მშობლიური)",
+      "russian": "რუსული (A2)"
     },
     "ai": {
       "title": "AI და Workflow",
-      "figma": "Figma",
       "aiAgents": "AI აგენტები",
       "prompting": "Prompting"
     },
     "descriptions": {
       "angular": "საწარმოო SPA-ების ფრეიმვორკი — კომპონენტები, signals, routing, forms და SSR მასშტაბირებადი აპლიკაციებისთვის.",
-      "typescript": "სტატიკური ტიპizacia უსაფრთხო რефactoring-ის, გასაგები API-ებისა და მოვლადი კოდისთვის.",
+      "ngrx": "პროგნოზირებადი state management actions, reducers, effects და entity collections-ით.",
+      "signals": "Fine-grained რეაქტიულობა ეფექტური UI განახლებებისთვის computed და linked signals-ით.",
+      "typescript": "სტატიკური ტიპიზაცია უსაფრთხო refactoring-ის, გასაგები API-ებისა და მოვლადი კოდისთვის.",
       "rxjs": "რეაქტიული ნაკადები async მონაცემების, HTTP-ის და რთული event-driven UI ლოგიკისთვის.",
       "javascript": "ძირითადი ენა თანამედროვე ბრაუზერების, tooling-ისა და frontend ეკოსისტემისთვის.",
+      "jest": "Unit და integration ტესტირება mocking-ით, snapshots-ით და coverage reporting-ით CI-ში.",
+      "jasmine": "Behaviour-driven ტესტირების ფრეიმვორკი Angular აპლიკაციებისთვის Karma test runner-ით.",
+      "cypress": "End-to-end ტესტირება კრიტიკული მომხმარებლის ნაკადებისთვის საიმედო browser ავტომატიზაციით.",
       "html": "სემანტიკური, accessible markup — ყველა ინტერფეისის საფუძველი.",
-      "css": "Layout, რესპონსიული დიზაინი, ანიმაციები და თანამედროვე CSS პოლირებული UI-სთვის.",
-      "scss": "ცვლადები, mixin-ები და მოდულური stylesheets თანმიმდევრული design system-ებისთვის.",
-      "state": "NgRx, signals და service პატერნები პროგნოზირებადი application state-ისთვის.",
-      "rest": "HTTP ინტegraciis, interceptors, caching, error handling და ტიპizirebuli API ფენები.",
-      "modular": "Feature მოდულები, lazy loading და სუფთა საზღვრები დიდი აპლიკაციებისთვის.",
-      "performance": "Bundle splitting, OnPush, defer blocks და profiling სწრაფი UX-ისთვის.",
-      "git": "Branching, rebasing და совместная მუშაობა სანდო version control-ისთვის.",
-      "github": "Pull request-ები, code review, Actions და გუნდური თანამშრომლობა.",
-      "cicd": "ავტომatizirebuli build, test და deploy pipeline-ები თანმიმდევრული релизовისთვის.",
-      "agile": "Scrum, sprint planning და იტერativuli მიწოდება cross-functional გუნდებში.",
+      "css": "Layout, რესპონსიული დიზაინი, ანიმაციები და preprocessors პოლირებული UI-სთვის.",
+      "responsive": "Mobile-first განლაგებები, რომლებიც უნაკლოდ ერგება მოწყობილობებსა და ეკრანის ზომებს.",
+      "tailwind": "Utility-first CSS სწრაფი prototyping-ისა და design token-ების თანმიმდევრული გამოყენებისთვის.",
+      "bem": "Block Element Modifier მეთოდოლოგია მასშტაბირებადი, მოვლადი CSS არქიტექტურისთვის.",
       "figma": "Design-to-code workflow — სპეციფიკაციები, variables, კომპონენტები, Dev Mode და MCP ზუსტ UI handoff-ისთვის.",
+      "adobeXd": "Prototyping და დიზაინის თანამშრომლობა გაზიარებული assets-ებითა და developer handoff specs-ებით.",
+      "material": "Google Material Design კომპონენტების ბიბლიოთეკა თანმიმდევრული, accessible საწარმოო UI-სთვის.",
+      "storybook": "იზოლირებული კომპონენტების განვითარება, დოკუმენტაცია და ვიზუალური ტესტირება design system-ებისთვის.",
+      "mfe": "Module Federation და დამოუკიდებლად დეპლოირებადი frontend-ები ერთიან პლატფორმაში.",
+      "oop": "ობიექტზე ორიენტირებული დიზაინ პატერნები მოდულური, გამოყენებადი და ტესტირებადი კოდისთვის.",
+      "solid": "Single responsibility, open-closed და dependency inversion პრინციპები სუფთა არქიტექტურისთვის.",
+      "kiss": "Keep It Simple, Stupid — სიცხადისა და მოვლადობის უპირატესობა ზედმეტ სირთულეზე.",
+      "state": "NgRx, signals და service პატერნები პროგნოზირებადი application state-ისთვის.",
+      "performance": "Bundle splitting, OnPush, defer blocks და profiling სწრაფი UX-ისთვის.",
+      "webpack": "Module bundling, code splitting და asset ოპტიმიზაცია production build-ებისთვის.",
+      "vite": "სწრაფი dev server და build tool native ESM მხარდაჭერით.",
+      "rest": "HTTP ინტეგრაცია, interceptors, caching, error handling და ტიპიზირებული API ფენები.",
+      "git": "Branching, rebasing და თანამშრომლობითი workflow სანდო version control-ისთვის.",
+      "cicd": "ავტომატიზირებული build, test და deploy pipeline-ები თანმიმდევრული რელიზებისთვის.",
+      "postman": "API ტესტირება, collection მართვა და გარემოს კონფიგურაცია backend ინტეგრაციისთვის.",
+      "eslint": "სტატიკური კოდის ანალიზი და linting წესები თანმიმდევრული კოდის ხარისხისთვის.",
+      "sonarqube": "კოდის ხარისხის კარიბჭეები, უსაფრთხოების სკანირება და ტექნიკური ვალის თვალყურის დევნება CI-ში.",
+      "agile": "Scrum, sprint planning და იტერაციული მიწოდება cross-functional გუნდებში.",
+      "jira": "Issue tracking, sprint board-ები და პროექტის მართვა agile workflow-ებისთვის.",
+      "notion": "დოკუმენტაცია, ცოდნის გაზიარება და გუნდური wiki თანამშრომლობითი პროექტ მენეჯმენტისთვის.",
+      "slack": "გუნდური კომუნიკაცია, ინტეგრაციები და async თანამშრომლობა განაწილებულ გუნდებში.",
       "aiAgents": "Cursor და SDK აგენტები scaffolding-ის, refactoring-ის, code review-ის, debugging-ისა და CI ავტომატიზაციისთვის.",
       "prompting": "სტრუქტურირებული prompt-ები, skills და context engineering სანდო AI-დამხარე განვითარებისთვის."
     }
@@ -137,7 +226,7 @@
     "hideDetails": "დეტალების დამალვა",
     "fintech": {
       "title": "Fintech Dashboard",
-      "description": "რეალ-ტaim ფინანსური ანალიტიკის დაფა ტრanzakciis monitioring-ითა და პორტფოლიოს მართვით.",
+      "description": "რეალ-ტაიმ ფინანსური ანალიტიკის დაფა ტრანზაქციების მონიტორინგითა და პორტფოლიოს მართვით.",
       "details": "Angular-ითა და RxJS-ით აგებული, live მონაცემების ნაკადებით, რთული გრაფიკებითა და როლ-ბაზირებული წვდომის კონტროლით."
     },
     "enterprise": {
@@ -151,7 +240,7 @@
       "details": "მობილურ-რესპონსიული Angular აპლიკაცია offline შესაძლებლობებით, GPS ინტეგრაციითა და დოკუმენტების მართვის workflow-ებით."
     },
     "monitoring": {
-      "title": "რეალ-ტaim მონაცემების მონიტორინგის პლატფორმა",
+      "title": "რეალ-ტაიმ მონაცემების მონიტორინგის პლატფორმა",
       "description": "Live მონაცემების მონიტორინგისა და alerting სისტემა ოპერაციული მეტრიკებისა და KPI-ებისთვის.",
       "details": "WebSocket-ით მუშაობს დაფა კონფიგურირებადი alerts-ით, ისტორიული მონაცემების ანალიზითა და მორგებადი widget განლაგებებით."
     }
@@ -166,11 +255,11 @@
       },
       "angular": {
         "title": "Angular განვითარება",
-        "description": "ექსpert დონის Angular განვითარება კომპონენტებიდან სრულ საწარმოო აპლიკაციებამდე."
+        "description": "ექსპერტ დონის Angular განვითარება კომპონენტებიდან სრულ საწარმოო აპლიკაციებამდე."
       },
       "enterprise": {
         "title": "საწარმოო აპლიკაციები",
-        "description": "მ robust აპლიკაციების შექმნა, რომლებიც რთულ ბიზნეს ლოგიკას მასშტაბით ამუშავებენ."
+        "description": "მყარი აპლიკაციების შექმნა, რომლებიც რთულ ბიზნეს ლოგიკას მასშტაბით ამუშავებენ."
       },
       "performance": {
         "title": "წარმადობის ოპტიმიზაცია",
@@ -178,7 +267,7 @@
       },
       "api": {
         "title": "API ინტეგრაციები",
-        "description": "უპრობлемmaso ინტegraciis REST API-ებთან, WebSockets-თან და მესამე მხარის სერვისებთან."
+        "description": "უპრობლემო ინტეგრაცია REST API-ებთან, WebSockets-თან და მესამე მხარის სერვისებთან."
       },
       "uiux": {
         "title": "UI/UX განხორციელება",
@@ -190,7 +279,7 @@
       },
       "problemSolving": {
         "title": "ტექნიკური პრობლემების გადაჭრა",
-        "description": "რთული გამოწვევების ეлегантურ, პრაქტიკულ გადაწყვეტილებებად დაშლა."
+        "description": "რთული გამოწვევების ელეგანტურ, პრაქტიკულ გადაწყვეტილებებად დაშლა."
       }
     }
   },
@@ -198,7 +287,7 @@
     "label": "სტატისტიკა",
     "title": "რიცხვებით",
     "years": "წლის გამოცდილება",
-    "projects": "დასრულებული პროექტი",
+    "projects": "მიწოდებული აპლიკაცია",
     "technologies": "გამოყენებული ტექნოლოგია",
     "industries": "ინდუსტრია"
   },

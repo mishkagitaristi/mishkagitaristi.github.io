@@ -26,15 +26,23 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
           @for (group of skillGroups; track group.id) {
             <div class="skills__group">
               <h3 class="skills__group-title">{{ group.titleKey | translate }}</h3>
-              <div class="skills__grid">
-                @for (skill of group.skills; track skill.id) {
-                  <app-skill-card
-                    [skillId]="skill.id"
-                    [nameKey]="skill.nameKey"
-                    [descriptionKey]="skill.descriptionKey"
-                  />
-                }
-              </div>
+              @if (group.display === 'tags') {
+                <div class="skills__tags">
+                  @for (skill of group.skills; track skill.id) {
+                    <span class="skills__tag">{{ skill.nameKey | translate }}</span>
+                  }
+                </div>
+              } @else {
+                <div class="skills__grid">
+                  @for (skill of group.skills; track skill.id) {
+                    <app-skill-card
+                      [skillId]="skill.id"
+                      [nameKey]="skill.nameKey"
+                      [descriptionKey]="skill.descriptionKey"
+                    />
+                  }
+                </div>
+              }
             </div>
           }
         </div>
@@ -65,6 +73,28 @@ import { cardStagger } from '../../../../shared/animations/portfolio.animations'
 
       @media (min-width: 1024px) {
         grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .skills__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+    }
+
+    .skills__tag {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full, 9999px);
+      transition: border-color var(--transition-base), color var(--transition-base);
+
+      &:hover {
+        border-color: var(--accent-from);
+        color: var(--accent-from);
       }
     }
   `,

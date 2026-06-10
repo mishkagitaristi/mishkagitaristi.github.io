@@ -35,6 +35,9 @@ import { timelineReveal } from '../../../../shared/animations/portfolio.animatio
                   <div>
                     <h3 class="experience__company">{{ item.companyKey | translate }}</h3>
                     <p class="experience__role">{{ item.roleKey | translate }}</p>
+                    @if (item.locationKey) {
+                      <p class="experience__location">{{ item.locationKey | translate }}</p>
+                    }
                   </div>
                   <span class="experience__period">{{ item.periodKey | translate }}</span>
                 </div>
@@ -120,6 +123,12 @@ import { timelineReveal } from '../../../../shared/animations/portfolio.animatio
       color: var(--accent-from);
       font-size: 0.9375rem;
       font-weight: 500;
+      margin-top: 0.25rem;
+    }
+
+    .experience__location {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
       margin-top: 0.25rem;
     }
 

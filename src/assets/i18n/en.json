@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About Me",
     "experience": "Experience",
+    "education": "Education",
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
@@ -10,7 +11,7 @@
   "hero": {
     "greeting": "Hello, I'm",
     "title": "Senior Frontend Engineer",
-    "subtitle": "Angular Developer specializing in enterprise applications, fintech platforms, gambling systems and scalable web solutions.",
+    "subtitle": "With 6+ years in Angular, TypeScript, and micro-frontend architecture, I've delivered 10+ real-world applications across high-traffic SaaS, fintech, gambling, and construction industries.",
     "ctaProjects": "View Projects",
     "ctaSkills": "Explore Skills",
     "ctaContact": "Contact Me"
@@ -19,40 +20,28 @@
     "label": "About",
     "title": "About Me",
     "subtitle": "Building exceptional digital experiences with modern frontend technologies.",
+    "summary": "With 6+ years of experience in Angular, TypeScript, and micro-frontend architecture, I've delivered 10+ real-world applications across high-traffic SaaS, fintech, gambling, and construction industries. Proficient in NgRx, Signals, RxJS, and ES6+, I specialise in modernising legacy systems and building scalable, pixel-perfect front-end solutions. Passionate about solving complex problems and enhancing UI/UX, I combine technical precision with a proactive, user-focused mindset. I thrive in collaborative environments, mentor teammates, and contribute to continuous innovation and product quality.",
     "journeyTitle": "Career Journey",
-    "highlights": {
-      "developer": "Software Developer with a passion for clean, maintainable code",
-      "angular": "Strong Angular expertise across multiple major versions",
-      "typescript": "Deep experience with TypeScript and type-safe architectures",
-      "enterprise": "Proven track record building enterprise-scale applications",
-      "fintech": "Fintech industry experience with complex financial workflows",
-      "gambling": "Gambling industry experience with real-time systems",
-      "construction": "Construction industry experience with field management tools",
-      "challenges": "Passionate about solving complex technical challenges",
-      "innovation": "Always interested in innovative technologies and best practices",
-      "location": "Based in Tbilisi, Georgia",
-      "remote": "Open to remote opportunities worldwide"
-    },
     "timeline": {
       "education": {
-        "year": "2015 — 2019",
-        "title": "Computer Science Education",
-        "description": "Built foundational knowledge in software engineering, algorithms, and web technologies."
+        "year": "2014 — 2018",
+        "title": "Georgian Technical University",
+        "description": "Bachelor's degree in Informatics — foundational knowledge in software engineering, algorithms, and web technologies."
       },
-      "earlyCareer": {
-        "year": "2019 — 2021",
-        "title": "Early Frontend Development",
-        "description": "Started professional journey building responsive web applications with modern JavaScript frameworks."
+      "techub": {
+        "year": "2019",
+        "title": "Israel Techub",
+        "description": "Front-end development course — intensive training in modern JavaScript frameworks and web development practices."
       },
-      "syionec": {
-        "year": "2021 — Present",
-        "title": "Syionec — Frontend Engineer",
-        "description": "Leading Angular development for enterprise systems across fintech, gambling, and construction industries."
+      "singular": {
+        "year": "2019 — 2022",
+        "title": "Singular — Frontend Developer",
+        "description": "Grew from intern to middle developer on a complex iGaming sportsbook application, collaborating with a 10+ person frontend team."
       },
-      "present": {
-        "year": "Today",
-        "title": "Senior Frontend Engineer",
-        "description": "Delivering scalable frontend architecture and mentoring teams on Angular best practices."
+      "syniotec": {
+        "year": "2022 — Present",
+        "title": "Syniotec — Frontend Developer",
+        "description": "Middle to senior role building Angular micro-frontends, component libraries, and enterprise solutions across construction and SaaS."
       }
     }
   },
@@ -60,71 +49,171 @@
     "label": "Experience",
     "title": "Work Experience",
     "subtitle": "Professional journey building enterprise-grade frontend solutions.",
-    "syionec": {
-      "company": "Syionec",
-      "role": "Frontend Engineer",
-      "period": "2021 — Present",
+    "syniotec": {
+      "company": "Syniotec",
+      "role": "Frontend Developer — Middle to Senior",
+      "period": "Oct 2022 — Present",
+      "location": "Tbilisi, Georgia",
       "items": {
-        "angular": "Angular development for complex enterprise applications",
-        "enterprise": "Building and maintaining enterprise systems at scale",
-        "architecture": "Designing scalable frontend architecture patterns",
-        "api": "API integrations with RESTful services and real-time data",
-        "workflows": "Implementing complex business workflows and state management",
-        "modern": "Leveraging modern web technologies and best practices"
+        "angular": "Built and maintained critical features using Angular 17–19, TypeScript, and Micro Frontend architecture, delivering scalable and maintainable solutions",
+        "legacy": "Refactored legacy Angular (v12) pages to v17+, improving page load performance by 35–50% through lazy loading, NgRx Signals, and performance debugging",
+        "storybook": "Designed and developed a custom component library with Storybook, boosting UI consistency and developer efficiency across 3+ teams",
+        "testing": "Led the implementation of 90%+ test coverage using Jest, increasing code reliability and strengthening the CI/CD pipeline",
+        "uiux": "Championed UI/UX enhancements during feature grooming sessions, collaborating closely with cross-functional teams to refine user flows and reduce development issues",
+        "planning": "Proactively contributed to product planning and ideation, influencing the direction of new features and design improvements",
+        "mfe": "Managed and integrated five micro frontends within the larger platform, ensuring clean architecture and smooth deployment",
+        "library": "Maintained and evolved a shared custom library, ensuring component reusability and consistency across all company web applications",
+        "collaboration": "Fostered close collaboration with backend engineers and QA to ensure robust feature delivery and smooth handoffs",
+        "reviews": "Conducted regular code reviews to uphold code quality standards and ensure adherence to best practices",
+        "mentoring": "Mentored junior developers, offering technical guidance, code feedback, and architectural insights",
+        "uml": "Initiated the adoption of UML diagrams to visualise complex workflows and improve architectural understanding among team members",
+        "modern": "Stayed up to date with the latest Angular and TypeScript features, integrating them continuously into development workflows to maintain a modern codebase"
       }
+    },
+    "singular": {
+      "company": "Singular",
+      "role": "Frontend Developer — Intern to Middle",
+      "period": "Jan 2019 — Oct 2022",
+      "location": "Tbilisi, Georgia",
+      "items": {
+        "sportsbook": "Contributed to the development and release of multiple key features in a complex iGaming sportsbook application",
+        "mobile": "Created mobile-first designs for better cross-device and cross-platform usage",
+        "mentoring": "Mentored junior developers, offering technical guidance, code feedback, and architectural insights",
+        "reviews": "Conducted regular code reviews to uphold code quality standards and ensure adherence to best practices",
+        "performance": "Improved application performance and UX through bug fixes and code optimisation",
+        "structure": "Improved and designed better file structures and implemented them",
+        "team": "Worked independently and in a team of 10+ frontend developers, collaborating with international designers, backend, PO/PMs, QA, and BA to deliver high-quality features"
+      }
+    }
+  },
+  "education": {
+    "label": "Education",
+    "title": "Education",
+    "subtitle": "Academic background and professional training.",
+    "gtu": {
+      "institution": "Georgian Technical University",
+      "credential": "Bachelor's Degree in Informatics",
+      "period": "2014 — 2018",
+      "description": "Comprehensive study of computer science fundamentals, software engineering principles, and information systems."
+    },
+    "techub": {
+      "institution": "Israel Techub",
+      "credential": "Front-end Development Course",
+      "period": "2019",
+      "description": "Intensive programme covering modern JavaScript, HTML/CSS, responsive design, and frontend frameworks."
     }
   },
   "skills": {
     "label": "Skills",
     "title": "Technical Skills",
     "subtitle": "Technologies and tools I use to build exceptional products.",
-    "frontend": {
-      "title": "Frontend",
+    "core": {
+      "title": "Core Technologies",
       "angular": "Angular",
-      "typescript": "TypeScript",
+      "ngrx": "NgRx",
+      "signals": "Signals",
       "rxjs": "RxJS",
-      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript (ES6+)",
+      "jest": "Jest",
+      "jasmine": "Jasmine",
+      "cypress": "Cypress"
+    },
+    "uiux": {
+      "title": "UI/UX",
       "html": "HTML",
-      "css": "CSS",
-      "scss": "SCSS"
+      "css": "CSS / SASS / LESS",
+      "responsive": "Responsive Web Design",
+      "tailwind": "Tailwind",
+      "bem": "BEM",
+      "figma": "Figma",
+      "adobeXd": "Adobe XD",
+      "material": "Material UI",
+      "storybook": "Storybook"
     },
     "architecture": {
       "title": "Architecture",
+      "mfe": "Micro Frontend Architecture",
+      "oop": "OOP",
+      "solid": "SOLID",
+      "kiss": "KISS",
       "state": "State Management",
-      "rest": "REST APIs",
-      "modular": "Modular Architecture",
       "performance": "Performance Optimization"
     },
     "tools": {
       "title": "Tools",
-      "git": "Git",
-      "github": "GitHub",
+      "webpack": "Webpack",
+      "vite": "Vite",
+      "rest": "REST APIs",
+      "git": "Git / GitHub / Bitbucket",
       "cicd": "CI/CD",
-      "agile": "Agile"
+      "postman": "Postman",
+      "eslint": "ESLint",
+      "sonarqube": "SonarQube",
+      "agile": "Agile (Scrum, Kanban)",
+      "jira": "JIRA",
+      "notion": "Notion",
+      "slack": "Slack"
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "communication": "Communication & Teamwork",
+      "empathy": "Empathy",
+      "ownership": "Ownership",
+      "problemSolving": "Problem-Solving",
+      "criticalThinking": "Critical Thinking",
+      "mentoring": "Mentoring",
+      "independence": "Working Independently",
+      "learning": "Continuous Learning"
+    },
+    "languages": {
+      "title": "Human Languages",
+      "english": "English (B2)",
+      "georgian": "Georgian (Native)",
+      "russian": "Russian (A2)"
     },
     "ai": {
       "title": "AI & Workflow",
-      "figma": "Figma",
       "aiAgents": "AI Agents",
       "prompting": "Prompting"
     },
     "descriptions": {
       "angular": "Enterprise framework for scalable SPAs — components, signals, routing, forms, and SSR across major versions.",
+      "ngrx": "Predictable state management with actions, reducers, effects, and entity collections for complex applications.",
+      "signals": "Fine-grained reactivity for performant UI updates with computed and linked signals in Angular.",
       "typescript": "Static typing for safer refactors, clearer APIs, and maintainable codebases at enterprise scale.",
       "rxjs": "Reactive streams for async data, HTTP, WebSockets, and complex event-driven UI logic.",
       "javascript": "Core language powering modern browsers, tooling, and the entire frontend ecosystem.",
+      "jest": "Unit and integration testing with mocking, snapshots, and coverage reporting in CI pipelines.",
+      "jasmine": "Behaviour-driven testing framework for Angular applications with Karma test runner.",
+      "cypress": "End-to-end testing for critical user flows with reliable browser automation.",
       "html": "Semantic, accessible markup that forms the foundation of every interface I build.",
-      "css": "Layout systems, responsive design, animations, and modern CSS for polished UIs.",
-      "scss": "Variables, mixins, and modular stylesheets for consistent, scalable design systems.",
-      "state": "NgRx, signals, and service patterns for predictable, debuggable application state.",
-      "rest": "HTTP integrations, interceptors, caching, error handling, and typed API layers.",
-      "modular": "Feature modules, lazy loading, and clean boundaries for large-scale applications.",
-      "performance": "Bundle splitting, OnPush, defer blocks, and profiling for fast user experiences.",
-      "git": "Branching, rebasing, and collaborative workflows for reliable version control.",
-      "github": "Pull requests, code review, Actions, and team collaboration on shared codebases.",
-      "cicd": "Automated build, test, and deploy pipelines for consistent, repeatable releases.",
-      "agile": "Scrum ceremonies, sprint planning, and iterative delivery in cross-functional teams.",
+      "css": "Layout systems, responsive design, animations, and preprocessors for polished UIs.",
+      "responsive": "Mobile-first layouts that adapt seamlessly across devices and screen sizes.",
+      "tailwind": "Utility-first CSS for rapid prototyping and consistent design token application.",
+      "bem": "Block Element Modifier methodology for scalable, maintainable CSS architecture.",
       "figma": "Design-to-code workflows — specs, variables, components, Dev Mode, and MCP for accurate UI handoff.",
+      "adobeXd": "Prototyping and design collaboration with shared assets and developer handoff specs.",
+      "material": "Google Material Design component library for consistent, accessible enterprise UIs.",
+      "storybook": "Isolated component development, documentation, and visual testing for design systems.",
+      "mfe": "Module Federation and independent deployable frontends integrated into a unified platform.",
+      "oop": "Object-oriented design patterns for modular, reusable, and testable code structures.",
+      "solid": "Single responsibility, open-closed, and dependency inversion principles for clean architecture.",
+      "kiss": "Keep It Simple, Stupid — favouring clarity and maintainability over unnecessary complexity.",
+      "state": "NgRx, signals, and service patterns for predictable, debuggable application state.",
+      "performance": "Bundle splitting, OnPush, defer blocks, and profiling for fast user experiences.",
+      "webpack": "Module bundling, code splitting, and asset optimisation for production builds.",
+      "vite": "Fast dev server and build tool with native ESM support and optimised production output.",
+      "rest": "HTTP integrations, interceptors, caching, error handling, and typed API layers.",
+      "git": "Branching, rebasing, and collaborative workflows for reliable version control.",
+      "cicd": "Automated build, test, and deploy pipelines for consistent, repeatable releases.",
+      "postman": "API testing, collection management, and environment configuration for backend integration.",
+      "eslint": "Static code analysis and linting rules for consistent code quality across teams.",
+      "sonarqube": "Code quality gates, security scanning, and technical debt tracking in CI pipelines.",
+      "agile": "Scrum ceremonies, sprint planning, and iterative delivery in cross-functional teams.",
+      "jira": "Issue tracking, sprint boards, and project management for agile development workflows.",
+      "notion": "Documentation, knowledge sharing, and team wikis for collaborative project management.",
+      "slack": "Team communication, integrations, and async collaboration across distributed teams.",
       "aiAgents": "Cursor and SDK agents for scaffolding, refactors, code review, debugging, and CI automation.",
       "prompting": "Structured prompts, skills, and context engineering for reliable AI-assisted development."
     }
@@ -198,7 +287,7 @@
     "label": "Statistics",
     "title": "By the Numbers",
     "years": "Years of Experience",
-    "projects": "Projects Delivered",
+    "projects": "Applications Delivered",
     "technologies": "Technologies Used",
     "industries": "Industries Worked In"
   },

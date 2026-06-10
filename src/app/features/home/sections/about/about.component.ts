@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
-import { ABOUT_HIGHLIGHTS, CAREER_TIMELINE } from '../../../../core/data/portfolio.data';
+import { CAREER_TIMELINE } from '../../../../core/data/portfolio.data';
 import { SectionHeadingComponent } from '../../../../shared/components/section-heading/section-heading.component';
 import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reveal.directive';
 
@@ -21,15 +21,8 @@ import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reve
         />
 
         <div class="about__grid">
-          <div class="about__highlights" appScrollReveal="left">
-            <ul class="about__list">
-              @for (key of highlights; track key) {
-                <li class="about__item">
-                  <span class="about__bullet" aria-hidden="true"></span>
-                  {{ key | translate }}
-                </li>
-              }
-            </ul>
+          <div class="about__summary-wrap" appScrollReveal="left">
+            <p class="about__summary">{{ 'about.summary' | translate }}</p>
           </div>
 
           <div class="about__timeline" appScrollReveal="right">
@@ -66,28 +59,10 @@ import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reve
       }
     }
 
-    .about__list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.875rem;
-    }
-
-    .about__item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
+    .about__summary {
       color: var(--text-secondary);
       font-size: 0.9375rem;
-      line-height: 1.6;
-    }
-
-    .about__bullet {
-      flex-shrink: 0;
-      width: 6px;
-      height: 6px;
-      margin-top: 0.5rem;
-      border-radius: 50%;
-      background: var(--accent-gradient);
+      line-height: 1.75;
     }
 
     .about__timeline-title {
@@ -152,6 +127,5 @@ import { ScrollRevealDirective } from '../../../../shared/directives/scroll-reve
   `,
 })
 export class AboutComponent {
-  protected readonly highlights = ABOUT_HIGHLIGHTS;
   protected readonly timeline = CAREER_TIMELINE;
 }

@@ -52,7 +52,17 @@ export class SeoService {
         addressCountry: 'GE',
       },
       sameAs: [PERSON.linkedin, PERSON.github],
-      knowsAbout: ['Angular', 'TypeScript', 'Frontend Development', 'Enterprise Applications'],
+      knowsAbout: [
+        'Angular',
+        'TypeScript',
+        'Micro Frontends',
+        'NgRx',
+        'RxJS',
+        'Jest',
+        'Storybook',
+        'Frontend Development',
+        'Enterprise Applications',
+      ],
     };
 
     this.injectJsonLd('person-schema', schema);

@@ -5,6 +5,7 @@ import { routeFade } from '../../shared/animations/portfolio.animations';
 import { HeroComponent } from './sections/hero/hero.component';
 import { AboutComponent } from './sections/about/about.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
+import { EducationComponent } from './sections/education/education.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { ExpertiseComponent } from './sections/expertise/expertise.component';
@@ -17,6 +18,7 @@ import { StatisticsComponent } from './sections/statistics/statistics.component'
     HeroComponent,
     AboutComponent,
     ExperienceComponent,
+    EducationComponent,
     SkillsComponent,
     ProjectsComponent,
     ExpertiseComponent,
@@ -29,6 +31,7 @@ import { StatisticsComponent } from './sections/statistics/statistics.component'
     <app-hero />
     <app-about />
     <app-experience />
+    <app-education />
     <app-skills />
     @defer (on viewport) {
       <app-projects />
@@ -55,7 +58,7 @@ export class HomeComponent implements OnInit {
     this.seo.update({
       title: 'Senior Frontend Engineer',
       description:
-        'Mikheil Mamniashvili — Senior Frontend Engineer specializing in Angular, enterprise applications, fintech, and scalable web solutions.',
+        'Mikheil Mamniashvili — Senior Frontend Engineer with 6+ years in Angular, TypeScript, and micro-frontend architecture. Delivered 10+ applications across SaaS, fintech, gambling, and construction at Syniotec and Singular.',
       path: '/',
     });
     this.seo.setPersonSchema();

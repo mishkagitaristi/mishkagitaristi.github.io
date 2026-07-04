@@ -72,21 +72,15 @@ export const PROCESS_STEPS = [
 
 export const TESTIMONIALS = [
   {
-    id: 'placeholder1',
-    quoteKey: 'testimonials.items.placeholder1.quote',
-    authorKey: 'testimonials.items.placeholder1.author',
-    roleKey: 'testimonials.items.placeholder1.role',
+    id: 'oto',
+    quoteKey: 'testimonials.items.oto.quote',
+    authorKey: 'testimonials.items.oto.author',
+    roleKey: 'testimonials.items.oto.role',
   },
   {
-    id: 'placeholder2',
-    quoteKey: 'testimonials.items.placeholder2.quote',
-    authorKey: 'testimonials.items.placeholder2.author',
-    roleKey: 'testimonials.items.placeholder2.role',
-  },
-  {
-    id: 'placeholder3',
-    quoteKey: 'testimonials.items.placeholder3.quote',
-    authorKey: 'testimonials.items.placeholder3.author',
-    roleKey: 'testimonials.items.placeholder3.role',
+    id: 'lasha',
+    quoteKey: 'testimonials.items.lasha.quote',
+    authorKey: 'testimonials.items.lasha.author',
+    roleKey: 'testimonials.items.lasha.role',
   },
 ] as const;

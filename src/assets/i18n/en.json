@@ -83,20 +83,15 @@
     "title": "What people say",
     "subtitle": "A few words from people I’ve worked with.",
     "items": {
-      "placeholder1": {
-        "quote": "[Placeholder — paste a real recommendation from your LinkedIn profile here.]",
-        "author": "Colleague Name",
-        "role": "Role, Company"
+      "oto": {
+        "quote": "Mikheil is a highly skilled Angular developer with a strong focus on pixel-perfect implementation. His attention to detail, dedication, and hard work consistently ensured top-quality results. A proactive problem-solver and a great team player, he would be a valuable asset to any organization. I highly recommend him!",
+        "author": "Oto Lolua",
+        "role": "Full Stack Team Lead — managed Mikheil directly"
       },
-      "placeholder2": {
-        "quote": "[Placeholder — a quote from a teammate or manager at Syniotec works great here.]",
-        "author": "Colleague Name",
-        "role": "Role, Company"
-      },
-      "placeholder3": {
-        "quote": "[Placeholder — ask a designer or PM you’ve worked with for two sentences.]",
-        "author": "Colleague Name",
-        "role": "Role, Company"
+      "lasha": {
+        "quote": "I had a pleasure of working with Mikheil on a couple of projects during my time at Syniotec. He has a very collaborative spirit and is super easy and comfortable to work with. He is always eager to share his knowledge and experience and is a true problem-solver.",
+        "author": "Lasha Loladze",
+        "role": "Senior Software Developer — teammate at Syniotec"
       }
     }
   },
@@ -284,9 +279,9 @@
     },
     "languages": {
       "title": "Human Languages",
-      "english": "English (B2)",
+      "english": "English (Full professional proficiency)",
       "georgian": "Georgian (Native)",
-      "russian": "Russian (A2)"
+      "russian": "Russian (Professional working proficiency)"
     },
     "ai": {
       "title": "AI & Workflow",

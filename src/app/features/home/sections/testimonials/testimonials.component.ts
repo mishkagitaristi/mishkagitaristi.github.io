@@ -47,9 +47,11 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
       display: grid;
       gap: 1.25rem;
       grid-template-columns: 1fr;
+      max-width: 900px;
+      margin-inline: auto;
 
-      @include mixins.respond-to(lg) {
-        grid-template-columns: repeat(3, 1fr);
+      @include mixins.respond-to(md) {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 

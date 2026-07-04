@@ -216,10 +216,11 @@ import { expandCollapse } from '../../animations/portfolio.animations';
     .project-card__tag {
       font-size: 0.75rem;
       font-weight: 500;
-      padding: 0.25rem 0.625rem;
-      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      padding: 0.3125rem 0.75rem;
+      border-radius: var(--radius-pill);
       background: var(--bg-elevated);
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--surface-border);
       color: var(--text-secondary);
     }
 

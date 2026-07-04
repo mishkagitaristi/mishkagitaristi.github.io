@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -76,11 +77,19 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
     }
 
     .services__icon {
-      width: 40px;
-      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      padding: 11px;
+      margin-bottom: 0.25rem;
       color: var(--accent-from);
+      background: var(--accent-tint);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
 
-      :deep(svg) {
+      ::ng-deep svg {
         width: 100%;
         height: 100%;
       }
@@ -112,10 +121,10 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
           content: '';
           position: absolute;
           left: 0;
-          top: 0.5em;
-          width: 0.5rem;
-          height: 0.5rem;
-          border-radius: 2px;
+          top: 0.55em;
+          width: 0.375rem;
+          height: 0.375rem;
+          border-radius: 50%;
           background: var(--accent-gradient);
         }
       }
@@ -142,5 +151,18 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
 })
 export class ServicesComponent {
   protected readonly services = SERVICES;
-  protected readonly getIcon = getExpertiseIcon;
+
+  // Icons are static strings from our own source, so bypassing
+  // sanitization is safe — without it Angular strips the <svg> markup.
+  private readonly sanitizer = inject(DomSanitizer);
+  private readonly iconCache = new Map<string, SafeHtml>();
+
+  protected getIcon(name: string): SafeHtml {
+    let icon = this.iconCache.get(name);
+    if (!icon) {
+      icon = this.sanitizer.bypassSecurityTrustHtml(getExpertiseIcon(name));
+      this.iconCache.set(name, icon);
+    }
+    return icon;
+  }
 }

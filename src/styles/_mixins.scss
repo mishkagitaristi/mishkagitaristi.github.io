@@ -1,10 +1,9 @@
+// Modern layered surface: hairline border + inner top highlight, no blur.
 @mixin glass-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-subtle);
+  background: var(--surface-bg);
+  border: 1px solid var(--surface-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--surface-highlight), var(--shadow-sm);
 }
 
 @mixin container {
@@ -30,14 +29,18 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8125rem 1.75rem;
   font-size: 0.9375rem;
   font-weight: 500;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-pill);
   cursor: pointer;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast),
-    background var(--transition-fast);
+    background var(--transition-fast), border-color var(--transition-fast);
   @include focus-ring;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
 
   &:active {
     transform: scale(0.98);
@@ -59,12 +62,12 @@
 
 @mixin button-secondary {
   @include button-base;
-  background: var(--bg-elevated);
+  background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--surface-border);
 
   &:hover {
-    background: var(--bg-glass);
+    background: var(--bg-elevated);
     border-color: var(--accent-from);
   }
 }

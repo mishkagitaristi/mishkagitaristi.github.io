@@ -40,10 +40,6 @@ import { SectionHeadingComponent } from '@shared/components/section-heading/sect
   styles: `
     @use 'styles/mixins';
 
-    .projects {
-      background: var(--bg-secondary);
-    }
-
     .projects__grid {
       display: grid;
       gap: 2rem;

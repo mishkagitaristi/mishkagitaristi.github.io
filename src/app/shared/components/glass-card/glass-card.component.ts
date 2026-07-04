@@ -10,16 +10,17 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
     .glass-card {
       @include mixins.glass-card;
-      padding: 1.5rem;
+      padding: 1.75rem;
+      height: 100%;
 
       &--hover {
         transition: transform var(--transition-base), box-shadow var(--transition-base),
           border-color var(--transition-base);
 
         &:hover {
-          transform: translateY(-4px);
-          box-shadow: var(--shadow-md);
-          border-color: var(--border-medium);
+          transform: translateY(-3px);
+          border-color: var(--surface-border-hover);
+          box-shadow: var(--surface-highlight), 0 16px 40px -16px var(--accent-glow);
         }
       }
     }

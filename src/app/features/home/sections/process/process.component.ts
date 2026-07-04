@@ -35,10 +35,6 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
   styles: `
     @use 'styles/mixins';
 
-    .process {
-      background: var(--bg-secondary);
-    }
-
     .process__steps {
       display: grid;
       gap: 1.5rem;
@@ -56,28 +52,36 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
 
     .process__step {
       position: relative;
-      padding: 1.5rem;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      background: var(--bg-primary);
-      transition: border-color var(--transition-base), transform var(--transition-base);
+      padding: 1.75rem 0.25rem 0.5rem;
+      border-top: 1px solid var(--border-subtle);
+      transition: border-color var(--transition-base);
 
-      &:hover {
-        border-color: var(--accent-from);
-        transform: translateY(-4px);
+      &::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: var(--accent-gradient);
+        transition: width var(--transition-slow);
+      }
+
+      &:hover::before {
+        width: 100%;
       }
     }
 
     .process__number {
       display: block;
       font-family: var(--font-mono);
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 500;
-      background: var(--accent-gradient);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.75rem;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1px var(--accent-from);
+      opacity: 0.65;
+      margin-bottom: 1rem;
     }
 
     .process__step-title {

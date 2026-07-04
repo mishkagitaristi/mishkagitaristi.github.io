@@ -19,21 +19,30 @@ import { TranslateModule } from '@ngx-translate/core';
   `,
   styles: `
     .section-heading {
-      text-align: center;
-      margin-bottom: 3rem;
-      max-width: 640px;
-      margin-inline: auto;
+      text-align: left;
+      margin-bottom: 3.5rem;
+      max-width: 720px;
     }
 
     .section-heading__label {
-      display: inline-block;
-      font-family: var(--font-body);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--font-mono);
       font-size: 0.8125rem;
-      font-weight: 600;
+      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
+
       color: var(--accent-from);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.875rem;
+
+      &::after {
+        content: '';
+        flex: 0 0 48px;
+        height: 1px;
+        background: linear-gradient(90deg, var(--accent-from), transparent);
+      }
     }
 
     .section-heading__title {

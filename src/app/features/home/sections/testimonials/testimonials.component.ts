@@ -73,9 +73,9 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
     }
 
     .testimonials__quote {
-      font-size: 0.9375rem;
+      font-size: 1rem;
       color: var(--text-secondary);
-      line-height: 1.7;
+      line-height: 1.75;
       flex: 1;
     }
 

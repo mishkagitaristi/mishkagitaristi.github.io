@@ -40,15 +40,30 @@ export interface Project {
   titleKey: string;
   descriptionKey: string;
   detailsKey: string;
+  resultKey: string;
   tags: string[];
   images: string[];
 }
 
-export interface ExpertiseItem {
+export interface ServiceItem {
   id: string;
   titleKey: string;
   descriptionKey: string;
+  deliverableKeys: string[];
   icon: string;
+}
+
+export interface ProcessStep {
+  id: string;
+  titleKey: string;
+  descriptionKey: string;
+}
+
+export interface TestimonialItem {
+  id: string;
+  quoteKey: string;
+  authorKey: string;
+  roleKey: string;
 }
 
 export interface StatItem {

@@ -62,6 +62,13 @@ import { expandCollapse } from '../../animations/portfolio.animations';
         <h3 class="project-card__title">{{ titleKey() | translate }}</h3>
         <p class="project-card__description">{{ descriptionKey() | translate }}</p>
 
+        @if (resultKey()) {
+          <p class="project-card__result">
+            <span class="project-card__result-label">{{ 'projects.resultLabel' | translate }}</span>
+            {{ resultKey()! | translate }}
+          </p>
+        }
+
         <div class="project-card__tags">
           @for (tag of tags(); track tag) {
             <span class="project-card__tag">{{ tag }}</span>
@@ -178,6 +185,27 @@ import { expandCollapse } from '../../animations/portfolio.animations';
       line-height: 1.6;
     }
 
+    .project-card__result {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding: 0.625rem 0.875rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid var(--accent-from);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      background: var(--bg-elevated);
+    }
+
+    .project-card__result-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-from);
+      margin-right: 0.375rem;
+    }
+
     .project-card__tags {
       display: flex;
       flex-wrap: wrap;
@@ -236,6 +264,7 @@ export class ProjectCardComponent {
   readonly titleKey = input.required<string>();
   readonly descriptionKey = input.required<string>();
   readonly detailsKey = input.required<string>();
+  readonly resultKey = input<string>();
   readonly tags = input.required<string[]>();
   readonly images = input.required<string[]>();
 

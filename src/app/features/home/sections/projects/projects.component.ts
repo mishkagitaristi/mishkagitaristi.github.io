@@ -13,7 +13,7 @@ import { SectionHeadingComponent } from '@shared/components/section-heading/sect
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [cardStagger],
   template: `
-    <section id="projects" class="section projects" aria-labelledby="projects-heading" @cardStagger>
+    <section id="work" class="section projects" aria-labelledby="projects-heading" @cardStagger>
       <div class="container">
         <app-section-heading
           sectionId="projects-heading"
@@ -28,6 +28,7 @@ import { SectionHeadingComponent } from '@shared/components/section-heading/sect
               [titleKey]="project.titleKey"
               [descriptionKey]="project.descriptionKey"
               [detailsKey]="project.detailsKey"
+              [resultKey]="project.resultKey"
               [tags]="project.tags"
               [images]="project.images"
             />

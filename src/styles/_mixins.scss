@@ -47,12 +47,13 @@
 @mixin button-primary {
   @include button-base;
   background: var(--accent-gradient);
-  color: #fff;
+  color: var(--accent-contrast);
+  font-weight: 600;
   border: none;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 16px var(--accent-glow);
 
   &:hover {
-    box-shadow: 0 6px 24px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 6px 24px var(--accent-glow);
   }
 }
 

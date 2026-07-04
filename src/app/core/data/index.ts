@@ -6,7 +6,9 @@ export type {
   SkillItem,
   SkillGroup,
   Project,
-  ExpertiseItem,
+  ServiceItem,
+  ProcessStep,
+  TestimonialItem,
   StatItem,
   InterestItem,
 } from '@core/models/portfolio.models';
@@ -20,6 +22,6 @@ export { EXPERIENCE } from '@core/data/experience.data';
 export { EDUCATION } from '@core/data/education.data';
 export { SKILL_GROUPS } from '@core/data/skills.data';
 export { PROJECTS } from '@core/data/projects.data';
-export { EXPERTISE } from '@core/data/expertise.data';
+export { SERVICES, PROCESS_STEPS, TESTIMONIALS } from '@core/data/services.data';
 export { STATS } from '@core/data/stats.data';
 export { INTERESTS } from '@core/data/interests.data';

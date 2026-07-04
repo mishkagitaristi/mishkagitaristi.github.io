@@ -1,20 +1,136 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Me",
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
     "experience": "Experience",
-    "education": "Education",
     "skills": "Skills",
-    "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hello, I'm",
-    "title": "Senior Frontend Engineer",
-    "subtitle": "With 6+ years in Angular, TypeScript, and micro-frontend architecture, I've delivered 10+ real-world applications across high-traffic SaaS, fintech, gambling, and construction industries.",
-    "ctaProjects": "View Projects",
-    "ctaSkills": "Explore Skills",
-    "ctaContact": "Contact Me"
+    "availability": "Available for new projects — remote, UTC+4",
+    "headlineStart": "I build fast, polished web apps",
+    "headlineAccent": "that move your business forward.",
+    "subtitle": "Senior Frontend Engineer with 6+ years in Angular and TypeScript. I’ve shipped 10+ production applications across fintech, SaaS, iGaming, and construction — and I care as much about how your product feels as how it’s built.",
+    "ctaStart": "Start a project",
+    "ctaWork": "See my work",
+    "pluckHint": "psst — try plucking the strings",
+    "soundToggle": "Toggle pluck sound"
+  },
+  "services": {
+    "label": "Services",
+    "title": "How I can help",
+    "subtitle": "From first prototype to enterprise scale — bring me in for the whole journey or one focused engagement.",
+    "ctaLead": "Not sure which one fits?",
+    "ctaLink": "Let’s talk about your project →",
+    "items": {
+      "product": {
+        "title": "Web App Development",
+        "description": "Your product built from zero to production with Angular — architecture, UI, testing, and deployment included.",
+        "d1": "SSR-ready Angular apps on a modern signals architecture",
+        "d2": "Pixel-perfect, accessible, mobile-first UI",
+        "d3": "Automated testing and CI/CD from day one"
+      },
+      "modernization": {
+        "title": "Legacy Modernization",
+        "description": "Stuck on an old Angular version or fighting a slow app? I migrate, refactor, and speed things up without stopping your feature work.",
+        "d1": "Angular upgrades — v12 → v17+ done in production",
+        "d2": "35–50% faster page loads via lazy loading and profiling",
+        "d3": "A migration path your users never notice"
+      },
+      "designSystem": {
+        "title": "Design Systems & Component Libraries",
+        "description": "A shared UI language for your teams: Storybook-documented component libraries that cut design and development time.",
+        "d1": "Storybook-first libraries adopted by 3+ teams",
+        "d2": "Design tokens, theming, and dark mode",
+        "d3": "Figma-to-code workflows"
+      },
+      "audit": {
+        "title": "Performance & Code Audits",
+        "description": "A senior pair of eyes on your frontend: performance, architecture, and code quality — with a prioritized action plan.",
+        "d1": "Lighthouse and bundle-size deep dive",
+        "d2": "Architecture and state-management review",
+        "d3": "Actionable report, quick wins first"
+      }
+    }
+  },
+  "process": {
+    "label": "Process",
+    "title": "How we’ll work together",
+    "subtitle": "No mystery — a clear path from first call to launch.",
+    "steps": {
+      "discover": {
+        "title": "Discovery call",
+        "description": "We talk about your goals, users, and constraints. Free, and — unlike my bass — no strings attached."
+      },
+      "propose": {
+        "title": "Plan & estimate",
+        "description": "You get a clear proposal: scope, timeline, price, and the technical approach in plain language."
+      },
+      "build": {
+        "title": "Build & demo",
+        "description": "Short iterations with a demo at every step — you always see where the project stands."
+      },
+      "support": {
+        "title": "Launch & support",
+        "description": "I ship it, measure it, and stick around for improvements and new ideas."
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What people say",
+    "subtitle": "A few words from people I’ve worked with.",
+    "items": {
+      "placeholder1": {
+        "quote": "[Placeholder — paste a real recommendation from your LinkedIn profile here.]",
+        "author": "Colleague Name",
+        "role": "Role, Company"
+      },
+      "placeholder2": {
+        "quote": "[Placeholder — a quote from a teammate or manager at Syniotec works great here.]",
+        "author": "Colleague Name",
+        "role": "Role, Company"
+      },
+      "placeholder3": {
+        "quote": "[Placeholder — ask a designer or PM you’ve worked with for two sentences.]",
+        "author": "Colleague Name",
+        "role": "Role, Company"
+      }
+    }
+  },
+  "projects": {
+    "label": "Case Studies",
+    "title": "Selected Work",
+    "subtitle": "Real products, real constraints, measurable results.",
+    "viewDetails": "View Details",
+    "hideDetails": "Hide Details",
+    "fintech": {
+      "title": "Fintech Dashboard",
+      "description": "Real-time financial analytics dashboard with transaction monitoring and portfolio management.",
+      "details": "Built with Angular and RxJS, featuring live data streams, complex chart visualizations, and role-based access control for financial advisors and clients.",
+      "result": "Advisors monitor portfolios in real time — live data at scale with zero UI jank."
+    },
+    "enterprise": {
+      "title": "Enterprise Management Platform",
+      "description": "Comprehensive business management system for multi-department enterprise operations.",
+      "details": "Modular Angular architecture with lazy-loaded feature modules, NgRx state management, and seamless integration with multiple backend microservices.",
+      "result": "One modular platform replaced scattered tools across multiple departments."
+    },
+    "construction": {
+      "title": "Construction Management System",
+      "description": "Field management platform for construction projects with resource tracking and scheduling.",
+      "details": "Mobile-responsive Angular application with offline capabilities, GPS integration, real-time project updates, and document management workflows.",
+      "result": "Field crews got a mobile-first app that keeps working even on poor connectivity."
+    },
+    "monitoring": {
+      "title": "Real-Time Data Monitoring Platform",
+      "description": "Live data monitoring and alerting system for operational metrics and KPI tracking.",
+      "details": "WebSocket-powered dashboard with configurable alerts, historical data analysis, and customizable widget layouts for operations teams.",
+      "result": "Operations teams see incidents in seconds, not minutes."
+    },
+    "resultLabel": "Result"
   },
   "about": {
     "label": "About",
@@ -218,70 +334,13 @@
       "prompting": "Structured prompts, skills, and context engineering for reliable AI-assisted development."
     }
   },
-  "projects": {
-    "label": "Projects",
-    "title": "Featured Projects",
-    "subtitle": "Selected work showcasing enterprise frontend development expertise.",
-    "viewDetails": "View Details",
-    "hideDetails": "Hide Details",
-    "fintech": {
-      "title": "Fintech Dashboard",
-      "description": "Real-time financial analytics dashboard with transaction monitoring and portfolio management.",
-      "details": "Built with Angular and RxJS, featuring live data streams, complex chart visualizations, and role-based access control for financial advisors and clients."
-    },
-    "enterprise": {
-      "title": "Enterprise Management Platform",
-      "description": "Comprehensive business management system for multi-department enterprise operations.",
-      "details": "Modular Angular architecture with lazy-loaded feature modules, NgRx state management, and seamless integration with multiple backend microservices."
-    },
-    "construction": {
-      "title": "Construction Management System",
-      "description": "Field management platform for construction projects with resource tracking and scheduling.",
-      "details": "Mobile-responsive Angular application with offline capabilities, GPS integration, real-time project updates, and document management workflows."
-    },
-    "monitoring": {
-      "title": "Real-Time Data Monitoring Platform",
-      "description": "Live data monitoring and alerting system for operational metrics and KPI tracking.",
-      "details": "WebSocket-powered dashboard with configurable alerts, historical data analysis, and customizable widget layouts for operations teams."
-    }
-  },
-  "expertise": {
-    "label": "Expertise",
-    "title": "What I Do Best",
-    "items": {
-      "architecture": {
-        "title": "Frontend Architecture",
-        "description": "Designing scalable, maintainable frontend systems that grow with your business."
-      },
-      "angular": {
-        "title": "Angular Development",
-        "description": "Expert-level Angular development from components to full enterprise applications."
-      },
-      "enterprise": {
-        "title": "Enterprise Applications",
-        "description": "Building robust applications that handle complex business logic at scale."
-      },
-      "performance": {
-        "title": "Performance Optimization",
-        "description": "Optimizing load times, bundle sizes, and runtime performance for better UX."
-      },
-      "api": {
-        "title": "API Integrations",
-        "description": "Seamless integration with REST APIs, WebSockets, and third-party services."
-      },
-      "uiux": {
-        "title": "UI/UX Implementation",
-        "description": "Translating designs into accessible, responsive interfaces with thoughtful interaction details."
-      },
-      "markup": {
-        "title": "Pixel-Perfect Markup",
-        "description": "Semantic HTML and precise CSS that matches design specs down to the pixel."
-      },
-      "problemSolving": {
-        "title": "Technical Problem Solving",
-        "description": "Breaking down complex challenges into elegant, practical solutions."
-      }
-    }
+  "stats": {
+    "label": "Statistics",
+    "title": "By the Numbers",
+    "years": "Years of Experience",
+    "projects": "Applications Delivered",
+    "technologies": "Technologies Used",
+    "industries": "Industries Worked In"
   },
   "interests": {
     "label": "Beyond Code",
@@ -298,24 +357,31 @@
       }
     }
   },
-  "stats": {
-    "label": "Statistics",
-    "title": "By the Numbers",
-    "years": "Years of Experience",
-    "projects": "Applications Delivered",
-    "technologies": "Technologies Used",
-    "industries": "Industries Worked In"
-  },
   "contact": {
     "label": "Contact",
     "title": "Get In Touch",
-    "subtitle": "Interested in working together? I'd love to hear from you.",
+    "subtitle": "Tell me about your project — I reply within 24 hours.",
     "info": "Contact Information",
     "social": "Connect With Me",
     "name": "Name",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
-    "availability": "Currently available for remote opportunities worldwide. Based in Tbilisi, Georgia (UTC+4)."
+    "availability": "Currently available for remote opportunities worldwide. Based in Tbilisi, Georgia (UTC+4).",
+    "form": {
+      "title": "Tell me about your project",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "optional": "(optional)",
+      "message": "What are you building?",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Message sent — thank you!",
+      "successBody": "I’ll get back to you within 24 hours. Meanwhile, feel free to connect on LinkedIn.",
+      "error": "Something went wrong. Please email me directly at"
+    }
   },
   "footer": {
     "title": "Frontend Engineer",

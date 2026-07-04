@@ -1,54 +1,64 @@
-// Material Design 3 system colors (default purple theme)
-// https://m3.material.io/styles/color/the-color-system/color-roles
+// "Amp glow" identity — stage-dark canvas, warm amber accent (tube amp),
+// teal secondary (oscilloscope). Light theme is warm workshop paper.
 
 [data-theme='dark'] {
-  --bg-primary: #141218;
-  --bg-secondary: #1d1b20;
-  --bg-elevated: #211f26;
-  --bg-glass: rgba(33, 31, 38, 0.72);
-  --border-subtle: #49454f;
-  --border-medium: #938f99;
-  --text-primary: #e6e0e9;
-  --text-secondary: #cac4d0;
-  --text-muted: #938f99;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.15);
-  --accent-from: #d0bcff;
-  --accent-to: #ccc2dc;
-  --hero-gradient-1: rgba(208, 188, 255, 0.15);
-  --hero-gradient-2: rgba(204, 194, 220, 0.1);
-  --hero-gradient-3: rgba(239, 184, 200, 0.08);
-  --particle-color: rgba(208, 188, 255, 0.3);
-  --nav-bg-scrolled: rgba(20, 18, 24, 0.85);
-  --tooltip-bg: #36343b;
-  --tooltip-border: #49454f;
-  --tooltip-text: #e6e0e9;
+  --bg-primary: #0c0d10;
+  --bg-secondary: #111318;
+  --bg-elevated: #171920;
+  --bg-glass: rgba(23, 25, 32, 0.72);
+  --border-subtle: #262933;
+  --border-medium: #414552;
+  --text-primary: #f2efe9;
+  --text-secondary: #b9b6ae;
+  --text-muted: #82807a;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.35), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.2);
+  --accent-from: #ffb454;
+  --accent-to: #ff8a3d;
+  --accent-contrast: #211303;
+  --accent-alt: #4cc9b0;
+  --accent-glow: rgba(255, 180, 84, 0.35);
+  --hero-gradient-1: rgba(255, 164, 61, 0.14);
+  --hero-gradient-2: rgba(76, 201, 176, 0.09);
+  --hero-gradient-3: rgba(255, 138, 61, 0.07);
+  --particle-color: rgba(255, 180, 84, 0.35);
+  --string-color: rgba(242, 239, 233, 0.16);
+  --string-active-color: rgba(255, 180, 84, 0.75);
+  --nav-bg-scrolled: rgba(12, 13, 16, 0.85);
+  --tooltip-bg: #1d2027;
+  --tooltip-border: #262933;
+  --tooltip-text: #f2efe9;
   --tooltip-shadow: 0 4px 8px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme='light'] {
-  --bg-primary: #fef7ff;
-  --bg-secondary: #f7f2fa;
-  --bg-elevated: #f3edf7;
-  --bg-glass: rgba(255, 251, 254, 0.72);
-  --border-subtle: #cac4d0;
-  --border-medium: #79747e;
-  --text-primary: #1d1b20;
-  --text-secondary: #49454f;
-  --text-muted: #79747e;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
-  --accent-from: #6750a4;
-  --accent-to: #625b71;
-  --hero-gradient-1: rgba(103, 80, 164, 0.12);
-  --hero-gradient-2: rgba(98, 91, 113, 0.08);
-  --hero-gradient-3: rgba(125, 82, 96, 0.06);
-  --particle-color: rgba(103, 80, 164, 0.25);
-  --nav-bg-scrolled: rgba(254, 247, 255, 0.85);
+  --bg-primary: #faf8f3;
+  --bg-secondary: #f2efe7;
+  --bg-elevated: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.72);
+  --border-subtle: #e0dcd1;
+  --border-medium: #a8a396;
+  --text-primary: #201e1a;
+  --text-secondary: #4f4c45;
+  --text-muted: #7c7970;
+  --shadow-sm: 0 1px 2px rgba(50, 40, 20, 0.06), 0 1px 3px rgba(50, 40, 20, 0.04);
+  --shadow-md: 0 4px 6px rgba(50, 40, 20, 0.08), 0 2px 4px rgba(50, 40, 20, 0.04);
+  --shadow-lg: 0 10px 15px rgba(50, 40, 20, 0.1), 0 4px 6px rgba(50, 40, 20, 0.05);
+  --accent-from: #c95f02;
+  --accent-to: #a94d08;
+  --accent-contrast: #ffffff;
+  --accent-alt: #0f766e;
+  --accent-glow: rgba(201, 95, 2, 0.25);
+  --hero-gradient-1: rgba(201, 95, 2, 0.1);
+  --hero-gradient-2: rgba(15, 118, 110, 0.08);
+  --hero-gradient-3: rgba(255, 138, 61, 0.06);
+  --particle-color: rgba(201, 95, 2, 0.3);
+  --string-color: rgba(32, 30, 26, 0.18);
+  --string-active-color: rgba(201, 95, 2, 0.7);
+  --nav-bg-scrolled: rgba(250, 248, 243, 0.85);
   --tooltip-bg: #ffffff;
-  --tooltip-border: #cac4d0;
-  --tooltip-text: #1d1b20;
-  --tooltip-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --tooltip-border: #e0dcd1;
+  --tooltip-text: #201e1a;
+  --tooltip-shadow: 0 4px 8px rgba(50, 40, 20, 0.12), 0 1px 3px rgba(50, 40, 20, 0.08);
 }

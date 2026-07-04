@@ -56,9 +56,6 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
   styles: `
     @use 'styles/mixins';
 
-    .experience {
-      background: var(--bg-secondary);
-    }
 
     .experience__timeline {
       position: relative;

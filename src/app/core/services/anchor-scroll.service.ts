@@ -29,11 +29,16 @@ export class AnchorScrollService {
     void this.router.navigate([normalizedRoute], { fragment }).then(scroll);
   }
 
-  private scrollTo(fragment: string): void {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        this.document.getElementById(fragment)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
+  // Deferred sections may not be in the DOM yet on the first attempt,
+  // so poll briefly before giving up.
+  private scrollTo(fragment: string, attempt = 0): void {
+    const el = this.document.getElementById(fragment);
+    if (el) {
+      requestAnimationFrame(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      return;
+    }
+    if (attempt < 20) {
+      setTimeout(() => this.scrollTo(fragment, attempt + 1), 100);
+    }
   }
 }

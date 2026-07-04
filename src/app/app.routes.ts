@@ -11,7 +11,7 @@ export const routes: Routes = [
       seo: {
         title: 'Senior Frontend Engineer',
         description:
-          'Mikheil Mamniashvili — Senior Frontend Engineer with 6+ years in Angular, TypeScript, and micro-frontend architecture. Delivered 10+ applications across SaaS, fintech, gambling, and construction at Syniotec and Singular.',
+          'Mikheil Mamniashvili — Senior Frontend Engineer. I design and build fast, polished Angular applications: new products, legacy modernization, design systems, and performance work. 6+ years across fintech, SaaS, iGaming, and construction.',
         path: '/',
         personSchema: true,
       },
@@ -26,7 +26,7 @@ export const routes: Routes = [
       seo: {
         title: 'Contact',
         description:
-          'Get in touch with Mikheil Mamniashvili — Senior Frontend Engineer available for remote opportunities.',
+          'Tell me about your project — Mikheil Mamniashvili, Senior Frontend Engineer, available for new projects worldwide. Replies within 24 hours.',
         path: '/contact',
         personSchema: true,
       },

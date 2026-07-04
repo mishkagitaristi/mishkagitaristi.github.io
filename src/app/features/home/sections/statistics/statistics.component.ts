@@ -34,14 +34,10 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
   styles: `
     @use 'styles/mixins';
 
-    .statistics {
-      background: var(--bg-secondary);
-    }
-
     .statistics__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      gap: 2rem 0;
 
       @include mixins.respond-to(md) {
         grid-template-columns: repeat(4, 1fr);
@@ -49,14 +45,31 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
     }
 
     .statistics__item {
-      text-align: center;
-      padding: 2rem 1rem;
+      text-align: left;
+      padding: 0.5rem 2rem;
+      border-left: 1px solid var(--border-subtle);
+
+      &:first-child {
+        border-left-color: transparent;
+        padding-left: 0;
+      }
+
+      @media (max-width: 767px) {
+        &:nth-child(odd) {
+          border-left-color: transparent;
+          padding-left: 0;
+        }
+      }
     }
 
     .statistics__label {
-      margin-top: 0.75rem;
-      font-size: 0.9375rem;
-      color: var(--text-secondary);
+      margin-top: 0.625rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
     }
   `,
 })

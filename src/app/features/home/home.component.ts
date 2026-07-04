@@ -35,12 +35,12 @@ import { TestimonialsComponent } from '@features/home/sections/testimonials/test
   template: `
     <app-hero />
     <app-services />
-    @defer (on viewport) {
+    @defer (on idle) {
       <app-projects />
     } @placeholder {
       <div class="defer-placeholder" aria-hidden="true"></div>
     }
-    @defer (on viewport) {
+    @defer (on idle) {
       <app-statistics />
     } @placeholder {
       <div class="defer-placeholder" aria-hidden="true"></div>

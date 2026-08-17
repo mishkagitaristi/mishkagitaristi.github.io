@@ -15,6 +15,7 @@ import { personFirstName } from '@core/utils/person.util';
 import { menuSlide } from '@shared/animations/portfolio.animations';
 import { LanguageSwitcherComponent } from '@shared/components/language-switcher/language-switcher.component';
 import { NavLinkComponent } from '@shared/components/nav-link/nav-link.component';
+import { PillNavComponent } from '@shared/components/pill-nav/pill-nav.component';
 import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-toggle.component';
 
 @Component({
@@ -25,6 +26,7 @@ import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-togg
     ThemeToggleComponent,
     LanguageSwitcherComponent,
     NavLinkComponent,
+    PillNavComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [menuSlide],
@@ -40,16 +42,7 @@ import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-togg
           <span class="header__logo-dot">.</span>
         </a>
 
-        <nav class="header__nav" aria-label="Main navigation">
-          @for (item of navItems; track item.id) {
-            <app-nav-link
-              [item]="item"
-              linkClass="header__link"
-              activeClass="header__link--active"
-              (navigated)="closeMenu()"
-            />
-          }
-        </nav>
+        <app-pill-nav class="header__nav" [items]="navItems" (navigated)="closeMenu()" />
 
         <div class="header__actions">
           <app-language-switcher />
@@ -145,44 +138,9 @@ import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-togg
 
     .header__nav {
       display: none;
-      gap: 0.25rem;
 
       @include mixins.respond-to(lg) {
-        display: flex;
-      }
-    }
-
-    :host ::ng-deep .header__link {
-      padding: 0.5rem 0.875rem;
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--text-secondary);
-      border-radius: var(--radius-sm);
-      transition: color var(--transition-fast), background var(--transition-fast);
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: center;
-        width: 16px;
-        height: 2px;
-        background: var(--accent-gradient);
-        border-radius: 1px;
-        transition: transform var(--transition-fast);
-      }
-
-      &:hover,
-      &.header__link--active {
-        color: var(--text-primary);
-      }
-
-      &:hover::after,
-      &.header__link--active::after {
-        transform: translateX(-50%) scaleX(1);
+        display: block;
       }
     }
 

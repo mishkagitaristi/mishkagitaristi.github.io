@@ -100,7 +100,7 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
       height: 12px;
       border-radius: 50%;
       background: var(--accent-gradient);
-      box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+      box-shadow: 0 0 12px var(--accent-glow);
     }
 
     .timeline__content {

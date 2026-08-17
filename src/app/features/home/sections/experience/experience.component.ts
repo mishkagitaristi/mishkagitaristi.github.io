@@ -94,7 +94,7 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
       border-radius: 50%;
       background: var(--accent-gradient);
       border: 3px solid var(--bg-secondary);
-      box-shadow: 0 0 16px rgba(99, 102, 241, 0.4);
+      box-shadow: 0 0 16px var(--accent-glow);
     }
 
     .experience__card {

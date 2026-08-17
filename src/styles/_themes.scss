@@ -32,6 +32,11 @@
   --string-color: rgba(242, 239, 233, 0.16);
   --string-active-color: rgba(255, 180, 84, 0.75);
   --nav-bg-scrolled: rgba(12, 13, 16, 0.85);
+  --nav-pill-bg: rgba(255, 255, 255, 0.04);
+  --nav-pill-border: rgba(255, 255, 255, 0.08);
+  --nav-pill-indicator: rgba(255, 180, 84, 0.14);
+  --nav-pill-indicator-border: rgba(255, 180, 84, 0.22);
+  --nav-pill-indicator-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
   --tooltip-bg: #1d2027;
   --tooltip-border: #262933;
   --tooltip-text: #f2efe9;
@@ -69,6 +74,11 @@
   --string-color: rgba(32, 30, 26, 0.18);
   --string-active-color: rgba(201, 95, 2, 0.7);
   --nav-bg-scrolled: rgba(250, 248, 243, 0.85);
+  --nav-pill-bg: rgba(255, 255, 255, 0.72);
+  --nav-pill-border: rgba(32, 30, 26, 0.1);
+  --nav-pill-indicator: rgba(201, 95, 2, 0.1);
+  --nav-pill-indicator-border: rgba(201, 95, 2, 0.18);
+  --nav-pill-indicator-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
   --tooltip-bg: #ffffff;
   --tooltip-border: #e0dcd1;
   --tooltip-text: #201e1a;

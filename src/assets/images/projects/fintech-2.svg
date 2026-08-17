@@ -1,10 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
   <defs>
-    <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#241a10"/>
-      <stop offset="100%" style="stop-color:#ffb454"/>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb454"/>
+      <stop offset="100%" stop-color="#ff8a3d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb454" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#ffb454" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="areaFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb454" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ffb454" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="areaFill2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4cc9b0" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#4cc9b0" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="340" fill="url(#g)"/>
-  <text x="300" y="170" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-size="24" font-weight="600">Analytics View</text>
+  <rect width="640" height="360" fill="#0c0d10"/>
+  <ellipse cx="430" cy="70" rx="300" ry="180" fill="url(#glow)"/>
+  <rect x="0" y="0" width="56" height="360" fill="#111318"/><line x1="56" y1="0" x2="56" y2="360" stroke="#262933" opacity="1"/><circle cx="28" cy="26" r="9" fill="url(#accentGrad)"/><rect x="10" y="54" width="36" height="32" rx="8" fill="#ffb454" opacity="0.14"/><rect x="21" y="63" width="14" height="14" rx="3" fill="#ffb454"/><rect x="10" y="96" width="36" height="32" rx="8" fill="#171920"/><rect x="21" y="105" width="14" height="14" rx="3" fill="#82807a" opacity="0.45"/><rect x="10" y="138" width="36" height="32" rx="8" fill="#171920"/><rect x="21" y="147" width="14" height="14" rx="3" fill="#82807a" opacity="0.45"/><rect x="10" y="180" width="36" height="32" rx="8" fill="#171920"/><rect x="21" y="189" width="14" height="14" rx="3" fill="#82807a" opacity="0.45"/><rect x="10" y="222" width="36" height="32" rx="8" fill="#171920"/><rect x="21" y="231" width="14" height="14" rx="3" fill="#82807a" opacity="0.45"/><rect x="10" y="264" width="36" height="32" rx="8" fill="#171920"/><rect x="21" y="273" width="14" height="14" rx="3" fill="#82807a" opacity="0.45"/>
+  <text x="80" y="29" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#f2efe9" text-anchor="start">Analytics View</text><rect x="498" y="13" width="58" height="22" rx="11" fill="#171920" stroke="#262933"/><rect x="564" y="13" width="58" height="22" rx="11" fill="#171920" stroke="#262933"/><rect x="512" y="21" width="30" height="6" rx="3" fill="#82807a" opacity="0.5"/><rect x="578" y="21" width="30" height="6" rx="3" fill="#82807a" opacity="0.5"/><line x1="56" y1="44" x2="640" y2="44" stroke="#262933" opacity="1"/>
+  <rect x="80" y="60" width="264" height="192" rx="10" fill="#171920" stroke="#262933"/><circle cx="168" cy="158" r="54" fill="none" stroke="#ffb454" stroke-width="22" stroke-dasharray="152.7 186.6" stroke-dashoffset="0.0" transform="rotate(-90 168 158)"/><circle cx="168" cy="158" r="54" fill="none" stroke="#4cc9b0" stroke-width="22" stroke-dasharray="101.8 237.5" stroke-dashoffset="-152.7" transform="rotate(-90 168 158)"/><circle cx="168" cy="158" r="54" fill="none" stroke="#82807a" stroke-width="22" stroke-dasharray="84.8 254.5" stroke-dashoffset="-254.5" transform="rotate(-90 168 158)"/><text x="168" y="167" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#f2efe9" text-anchor="middle">68%</text><circle cx="268" cy="104" r="5" fill="#ffb454"/><rect x="282" y="101" width="46" height="6" rx="3" fill="#82807a" opacity="0.4"/><circle cx="268" cy="134" r="5" fill="#4cc9b0"/><rect x="282" y="131" width="46" height="6" rx="3" fill="#82807a" opacity="0.4"/><circle cx="268" cy="164" r="5" fill="#82807a"/><rect x="282" y="161" width="46" height="6" rx="3" fill="#82807a" opacity="0.4"/><circle cx="268" cy="194" r="5" fill="#ff8a3d"/><rect x="282" y="191" width="46" height="6" rx="3" fill="#82807a" opacity="0.4"/><rect x="360" y="60" width="256" height="192" rx="10" fill="#171920" stroke="#262933"/><rect x="380" y="181" width="26" height="55" rx="6" fill="url(#accentGrad)" opacity="1"/><rect x="420" y="146" width="26" height="90" rx="6" fill="#4cc9b0" opacity="0.75"/><rect x="460" y="167" width="26" height="69" rx="6" fill="url(#accentGrad)" opacity="1"/><rect x="500" y="125" width="26" height="111" rx="6" fill="#4cc9b0" opacity="0.75"/><rect x="540" y="157" width="26" height="79" rx="6" fill="url(#accentGrad)" opacity="1"/><rect x="580" y="112" width="26" height="124" rx="6" fill="#4cc9b0" opacity="0.75"/><line x1="376" y1="236" x2="600" y2="236" stroke="#262933" opacity="0.8"/>
+  <rect x="80" y="262" width="536" height="120" rx="10" fill="#171920" stroke="#262933"/><rect x="96" y="280" width="150" height="6" rx="3" fill="#82807a" opacity="0.18"/><rect x="266" y="280" width="96" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="382" y="280" width="118" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="520" y="280" width="80" height="6" rx="3" fill="#82807a" opacity="0.11"/><rect x="96" y="312" width="150" height="6" rx="3" fill="#82807a" opacity="0.18"/><rect x="266" y="312" width="96" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="382" y="312" width="118" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="520" y="312" width="80" height="6" rx="3" fill="#82807a" opacity="0.11"/><rect x="96" y="344" width="150" height="6" rx="3" fill="#82807a" opacity="0.18"/><rect x="266" y="344" width="96" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="382" y="344" width="118" height="6" rx="3" fill="#82807a" opacity="0.14"/><rect x="520" y="344" width="80" height="6" rx="3" fill="#82807a" opacity="0.11"/>
+  <rect x="0.5" y="0.5" width="639" height="359" rx="0" fill="none" stroke="#262933"/>
 </svg>

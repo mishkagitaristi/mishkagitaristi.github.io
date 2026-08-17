@@ -52,6 +52,11 @@ import { ScrollRevealDirective } from '@shared/directives/scroll-reveal.directiv
 
       @include mixins.respond-to(md) {
         grid-template-columns: repeat(2, 1fr);
+
+        /* An odd final card spans the row instead of leaving a gap. */
+        > *:last-child:nth-child(odd) {
+          grid-column: 1 / -1;
+        }
       }
     }
 

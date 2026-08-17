@@ -83,4 +83,10 @@ export const TESTIMONIALS = [
     authorKey: 'testimonials.items.lasha.author',
     roleKey: 'testimonials.items.lasha.role',
   },
+  {
+    id: 'gigauri',
+    quoteKey: 'testimonials.items.gigauri.quote',
+    authorKey: 'testimonials.items.gigauri.author',
+    roleKey: 'testimonials.items.gigauri.role',
+  },
 ] as const;

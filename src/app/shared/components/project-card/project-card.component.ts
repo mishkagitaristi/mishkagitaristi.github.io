@@ -20,8 +20,8 @@ import { expandCollapse } from '../../animations/portfolio.animations';
         <img
           [src]="images()[currentIndex()]"
           [alt]="titleKey() | translate"
-          width="600"
-          height="340"
+          width="640"
+          height="360"
           loading="lazy"
           class="project-card__image"
         />

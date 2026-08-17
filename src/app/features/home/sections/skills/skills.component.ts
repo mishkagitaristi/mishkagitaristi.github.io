@@ -91,7 +91,7 @@ import { SkillCardComponent } from '@shared/components/skill-card/skill-card.com
       color: var(--text-secondary);
       background: var(--bg-elevated);
       border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-full, 9999px);
+      border-radius: var(--radius-pill);
       transition: border-color var(--transition-base), color var(--transition-base);
 
       &:hover {

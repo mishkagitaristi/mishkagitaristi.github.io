@@ -13,4 +13,16 @@ export const INTERESTS: InterestItem[] = [
     descriptionKey: 'interests.items.robotics.description',
     image: 'assets/images/interests/robotics-ee.svg',
   },
+  {
+    id: 'tech',
+    titleKey: 'interests.items.tech.title',
+    descriptionKey: 'interests.items.tech.description',
+    image: 'assets/images/interests/tech-chip.svg',
+  },
+  {
+    id: 'cars',
+    titleKey: 'interests.items.cars.title',
+    descriptionKey: 'interests.items.cars.description',
+    image: 'assets/images/interests/rally-car.svg',
+  },
 ];

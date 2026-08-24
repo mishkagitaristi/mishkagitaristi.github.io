@@ -349,11 +349,19 @@
     "items": {
       "music": {
         "title": "Music",
-        "description": "I'm deeply in love with music. I used to be a professional bass player in a band — holding down the groove taught me how to listen, stay in sync, and be a reliable team player."
+        "description": "I'm deeply in love with music. I used to be a professional bass player in a band, laying down the groove night after night on stage — it taught me how to listen closely, stay locked in sync with everyone around me, and show up as a reliable team player, on stage and off."
       },
       "robotics": {
         "title": "Electrical Engineering & Robotics",
-        "description": "Passionate about electrical engineering and robotics — tinkering with circuits, automation, and where hardware meets software."
+        "description": "Passionate about electrical engineering and robotics — tinkering with circuits, sensors, and automation late into the evening, chasing that spot where hardware meets software and a pile of components turns into something that actually moves."
+      },
+      "tech": {
+        "title": "Technology",
+        "description": "I'm a self-confessed tech enthusiast — new frameworks, gadgets, AI tools, hardware releases, I want to know about it. I spend my downtime reading changelogs and release notes for fun, always chasing the latest updates and trends so I never fall behind the curve."
+      },
+      "cars": {
+        "title": "Cars, Rally & Off-Roading",
+        "description": "Cars have been a lifelong obsession — the sound of an engine, the feel of a well-tuned chassis, all of it. I chase that same thrill watching and following rally racing, and I love getting off the paved road entirely, taking on rough terrain where grip, patience, and a good co-driver matter more than horsepower."
       }
     }
   },

@@ -385,7 +385,8 @@
   },
   "footer": {
     "title": "Frontend Engineer",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "builtWith": "Built with"
   },
   "a11y": {
     "skipToContent": "Skip to main content"

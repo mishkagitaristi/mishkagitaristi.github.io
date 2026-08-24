@@ -35,6 +35,10 @@ import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-togg
 
         <p class="footer__copyright">
           &copy; {{ year }} {{ person.name }}. {{ 'footer.rights' | translate }}
+          <span class="footer__builtWith">
+            {{ 'footer.builtWith' | translate }}
+            <a href="https://angular.dev" target="_blank" rel="noopener noreferrer">Angular 22</a>
+          </span>
         </p>
       </div>
     </footer>
@@ -108,6 +112,21 @@ import { ThemeToggleComponent } from '@shared/components/theme-toggle/theme-togg
       color: var(--text-muted);
       padding-top: 1.5rem;
       border-top: 1px solid var(--border-subtle);
+    }
+
+    .footer__builtWith {
+      display: block;
+      margin-top: 0.375rem;
+
+      a {
+        color: var(--text-muted);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        &:hover {
+          color: var(--accent-from);
+        }
+      }
     }
   `,
 })
